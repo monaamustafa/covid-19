@@ -100,16 +100,18 @@ a.link-as-btn {
         display: none;
     }
 }
-.overlay {
+/* .overlay {
     background-color: rgba(231, 230, 230, 0.233);
     position: absolute;
     height: 100%;  
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; */
 }
 header {
     background-image: url('../Images/shape-a.png');
+    background-color: rgba(247, 244, 244, 0.233);
+  mix-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -152,7 +154,7 @@ background-color: #2f77cf;
 
 }
 .HomeBanner .links{
-    margin: 10% 0;
+    margin: 10% 20%;
 }
 .HomeBanner .homeImg{
     width: 100%;

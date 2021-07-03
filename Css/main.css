@@ -1,0 +1,228 @@
+:root {
+    --mainColor: #50658e;
+    --secondColor: #FF5363;
+    --diffColor: #7d92bb;
+    --whiteColor: #f5f6fa;
+    --textColor: #3d4b69;
+}
+
+/* fonts
+font-family: 'Akaya Kanadaka', cursive;
+font-family: 'Rubik', sans-serif;
+font-family: 'Yellowtail', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+ */
+/* ********************  General styles **************************** */
+* {
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5{
+font-family: 'Fjalla One', sans-serif;
+font-weight: 900;
+}
+h6{
+    color: #7d92bb;
+}
+h5{
+    color: var(--textColor);
+}
+h3{
+    color: var(--mainColor);
+}
+.diffcolor{
+    color: var(--secondColor);
+}
+body {
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    color: var(--textColor);
+}
+
+ul li {
+    display: inline;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+.navbar-background {
+    background-color: var(--whiteColor);
+}
+p {
+
+    color: var(--mainColor);
+}
+
+a.link-as-btn {
+    background-color: #2a81ea;
+    padding: 10px 50px;
+    border-radius: 50px;
+    color: var(--whiteColor) !important;
+    text-align: center;
+} 
+/* ************************************ header************************************************************ */
+/* ********************  navbar **************************** */
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand a {
+    font-weight: 900;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #394B6C !important;
+    color: var(--mainColor);
+}
+
+.navbar .navbar-brand a i {
+    color: var(--secondColor);
+}
+
+.navbar .navbar-brand a span {
+    color: var(--mainColor);
+}
+.menuicon{
+    display: none;
+}
+@media only screen and (max-width: 1200px){
+    .menuicon{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+    }
+}
+.overlay {
+    background-color: rgba(231, 230, 230, 0.233);
+    position: absolute;
+    height: 100%;  
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header {
+    background-image: url('../Images/shape-a.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.nav-link {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--mainColor) ;
+    font-family: 'Fjalla One', sans-serif;
+}
+a.active{
+    color: #2a81ea !important;
+}
+.nav-link:hover {
+    color: #2a81ea ;
+}
+.navbar ul li a.link-as-btn:hover{
+background-color: #2f77cf;
+}
+/* **************************************************************************************** */
+/* HomeBanner */
+
+.HomeBanner {
+    padding: 5% 1%;
+    display: flex;
+    text-align: center;
+    /* flex-wrap: wrap; */
+}
+.HomeBanner .homeContent .heading h1 {
+    color: var(--mainColor);
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 8px;
+    font-family: 'Fjalla One', sans-serif;
+}
+.HomeBanner .homeContent p{
+    font-weight: 400;
+    font-size: 17px;
+
+}
+.HomeBanner .links{
+    margin: 10% 0;
+}
+.HomeBanner .homeImg{
+    width: 100%;
+    height: 150%;
+}
+.heading{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/* image */
+.homeImg img {
+    width: 100%;
+}
+
+/*  cases */
+
+.cronaCases{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items:    center;
+    text-align: center;
+}
+
+.cronaCases .cases{
+    width: 38%;
+    align-self: center;
+}
+.cronaCases  p.numbers{
+
+    font-weight: 900;
+    font-size: 32px;
+}
+@media only screen and (max-width: 750px){
+    .HomeBanner, .cronaCases{
+    flex-wrap: wrap;
+    }
+    .cronaCases .cases{
+        width: 100%;
+    }
+}
+/* ************************************************************************************************** */
+
+/* *************************************************************************************************  */
+
+/* ************************************************************************************************** */
+
+/* *************************************************************************************************  */
+
+/* ************************************************************************************************** */
+
+/* *************************************************************************************************  */
+
+/* ************************************************************************************************** */
+
+/* *************************************************************************************************  */
+
+/* ************************************************************************************************** */
+
+/* *************************************************************************************************  */
+
+/* ************************************************************************************************** */
+
+/* *************************************************************************************************  */
+
+/* ************************************************************************************************** */
+
+/* *************************************************************************************************  */
+
+/* ************************************************************************************************** */
+
+/* *************************************************************************************************  */

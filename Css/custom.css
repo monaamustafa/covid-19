@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+/* ****************************************************************************** */
+.HomeBanner {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* heading */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 30px;
+}
+
+/* home image */
+.homeImg img {
+    width: 100%;
+}
+
+/* home links */
+
+.HomeBanner .links {
+    margin: 10% 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.HomeBanner .links a {
+    display: block;
+}
+
+
+/* cases */
+
+.cronaCases {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .HomeBanner .links a,  .cronaCases .cases {
+        width: 100%;
+    }
+}
+/* **********************************About********************************************************* */
+
+.aboutdetails {
+    border: 1px solid #7d92bb;
+    padding: 0;
+    text-align: center;
+}
+
+.aboutdetails h5 {
+    padding: 20px;
+}
+
+.aboutdetails .details {
+    border-top: 1px solid #7d92bb;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ******************************************spread********************************************************* */
+.spreadContant{
+    text-align: center;
+    padding: 100px 0;
+}
+.spreadDetials{
+    justify-content: space-around;
+}
+.spreadDetials .details img{
+    width: 100%;
+    border-bottom: 8px solid #7d92bb;
+
+}
+.spread .question{
+    text-align: center;
+}
+/* *********************************************symptoms********************************************************* */
+.symptoms{
+
+}
+.symptoms .symptomsContant{
+    text-align: center;
+    padding: 100px 0;
+}
+.symptoms .symptomsDetials{
+    justify-content: space-between;
+    
+}
+.symptomsDetialsImg{
+    width: 80px;
+    position: absolute;
+    top: -26%;
+    left: 68%;
+}
+
+.symptoms .symptomsDetials .details{
+border: 1px solid #7d92bb;
+position: relative;
+margin: 30px 0;
+padding: 0;
+}
+.symptoms .symptomsDetials .details img{
+    border-radius: 50%;
+    width: 100%;
+    /* size: 20px; */
+    /* top: -98px;
+    left: 250px; */
+}

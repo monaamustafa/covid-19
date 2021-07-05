@@ -10,59 +10,64 @@
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Base CSS -->
-    <!-- <link rel="stylesheet" href="Css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link href="Css/bootstrap-grid.css " rel="stylesheet">
-    <link href="Css/main.css" rel="stylesheet">
+    <link href="Css/custom.css" rel="stylesheet">
     <!-- icons -->
-    <link href="css/themify-icons/themify-icons.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
+    <script src="Js/all.min.js"></script>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Rubik:wght@300&family=Yellowtail&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-    <!--Google fonts  -->
-    <script src="Js/all.min.js"></script>
 </head>
 
 <body>
-    <!-- header -->
     <header>
-        <div class="overlay"></div>
-        <nav class="container">
-            <div class="navbar">
-                <div class="navbar-brand">
-                    <a>
-                        C<i class="fas fa-viruses"></i>vid<span>19</span>
-                    </a>
-                </div>
-                <ul class="navbar">
-                    <li><a href="#home" class="home nav-link active ">Home</a></li>
-                    <li><a href="#about" class="about nav-link">About Corona</a></li>
-                    <li><a href="#symptoms" class="symptoms nav-link">Symptoms</a></li>
-                    <li><a href="#prevention" class="prevention nav-link">Prevention</a></li>
-                    <li><a href="#treatment" class="treatment nav-link">Treatment</a></li>
-                    <li><a href="#FAQ" class="FAQ nav-link">FAQ</a></li>
-                    <li><a href="#news" class="news nav-link">News</a></li>
-                    <li><a class="nav-link link-as-btn " href="#">Do & don't</a>
-                    </li>
-                </ul>
-                <div class="menuicon">
-                    <i class="fas fa-ellipsis-h"></i>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white ">
+            <div class="container">
+                <a class="navbar-brand" href="#">C<i class="fas fa-viruses"></i>vid<span>19</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Corona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Symptoms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prevention</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Treatment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Do & don't</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <section id="home" class="container">
-            <div class="HomeBanner">
-                <div class="homeContent">
+        <section id="home" class=" HomeBanner container box">
+            <div class=" row ">
+                <div class="homeContent col-lg-6 col-md-6 col-sm-12">
                     <div class="heading">
                         <div class="mainHeading">
                             <h1>CORONA</h1>
@@ -95,123 +100,139 @@
                     </div>
                     <p><small>* Last updated: Jun 21, 2020, 09:24 AM America/Chicago</small></p>
                 </div>
-                <div class="homeImg">
+                <div class="homeImg col-lg-6 col-md-6 col-sm-12">
                     <img src="Images/header-a.png" alt="header-a">
                 </div>
             </div>
         </section>
-    </header>
-    <!-- /header -->
-    <!-- main start -->
-    <main>
 
-        <!-- ********************************************************************************************
+    </header>
+    <!-- ********************************************************************************************
                                     about
         ************************************************************************************************* -->
-        <section id="about ">
-            <div class="about box container">
-                <div class="aboutContent fullWidth">
-                    <h5> ABOUT THE DISEASE</h5>
-                    <h3>CORONAVIRUS (COVID-19)</h3>
-                    <p>
-                        <span> COVID-19 is a new illness that can affect your lungs and airways.</span>
-                        It's caused by a virus called coronavirus. It was discovered in December 2019 in Wuhan, Hubei,
-                        China.Common signs of infection include respiratory symptoms, fever, cough, shortness of breath
+    <section id="about " class="box container">
+        <div class="about flexBox row">
+            <div class="aboutContent  col-lg-7 col-md-6 col-sm-12 ">
+                <h5> ABOUT THE DISEASE</h5>
+                <h3>CORONAVIRUS (COVID-19)</h3>
+                <p>
+                    <span> COVID-19 is a new illness that can affect your lungs and airways.</span>
+                    It's caused by a virus called coronavirus. It was discovered in December 2019 in Wuhan, Hubei,
+                    China.
+                    <p>Common signs of infection include respiratory symptoms, fever, cough, shortness of breath
                         and
                         breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute
-                        respiratory syndrome, kidney failure and even death.
+                        respiratory syndrome, kidney failure and even death.</p>
+                    <p>
                         Standard recommendations to prevent infection spread include regular hand washing, covering
                         mouth
-                        and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with
+                        and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact
+                        with
                         anyone showing symptoms of respiratory illness such as coughing and sneezing.
                     </p>
+            </div>
+            <div class="aboutdetails col-lg-5 col-md-6 col-sm-12 ">
+                <h5> What you need to know</h5>
+                <div class="details">
+                    <a href="">How coronavirus is spread</a>
+                    <i class="fas fa-arrow-right icon"></i>
+                    <!-- <i class="ti-arrow-right"></i> -->
                 </div>
-                <div class="aboutdetails fullWidth">
-                    <h5> What you need to know</h5>
-                    <div class="details">
-                        <a href="">How coronavirus is spread</a>
-                        <i class="fas fa-arrow-right icon"></i>
-                        <!-- <i class="ti-arrow-right"></i> -->
-                    </div>
-                    <div class="details">
-                        <a href="">Symptoms of coronavirus</a>
-                        <i class="fas fa-arrow-right icon"></i>
-                        <!-- <i class="ti-arrow-right"></i> -->
-                    </div>
-                    <div class="details">
-                        <a href="">How to protect yourself</a>
-                        <i class="fas fa-arrow-right icon"></i>
-                        <!-- <i class="ti-arrow-right"></i> -->
-                    </div>
-                    <div class="details">
-                        <a href="">Treatment for coronavirus</a>
-                        <i class="fas fa-arrow-right icon"></i>
-                        <!-- <i class="ti-arrow-right"></i> -->
-                    </div>
-                    <div class="details">
-                        <a href="">Myth-Busters of coronavirus</a>
-                        <i class="fas fa-arrow-right icon"></i>
-                        <!-- <i class="ti-arrow-right"></i> -->
-                    </div>
-                    <div class="details">
-                        <a href="">Questions & answers</a>
-                        <i class="fas fa-arrow-right icon"></i>
-                        <!-- <i class="ti-arrow-right "></i> -->
-                    </div>
+                <div class="details">
+                    <a href="">Symptoms of coronavirus</a>
+                    <i class="fas fa-arrow-right icon"></i>
+                    <!-- <i class="ti-arrow-right"></i> -->
+                </div>
+                <div class="details">
+                    <a href="">How to protect yourself</a>
+                    <i class="fas fa-arrow-right icon"></i>
+                    <!-- <i class="ti-arrow-right"></i> -->
+                </div>
+                <div class="details">
+                    <a href="">Treatment for coronavirus</a>
+                    <i class="fas fa-arrow-right icon"></i>
+                    <!-- <i class="ti-arrow-right"></i> -->
+                </div>
+                <div class="details">
+                    <a href="">Myth-Busters of coronavirus</a>
+                    <i class="fas fa-arrow-right icon"></i>
+                    <!-- <i class="ti-arrow-right"></i> -->
+                </div>
+                <div class="details">
+                    <a href="">Questions & answers</a>
+                    <i class="fas fa-arrow-right icon"></i>
+                    <!-- <i class="ti-arrow-right "></i> -->
                 </div>
             </div>
-        </section>
-        <!-- ********************************************************************************************
-
+        </div>
+    </section>
+    <!-- ********************************************************************************************
+                                        spread
         ************************************************************************************************* -->
-        <section id="SPREAD">
-            <div>
-            <h4>
-                HOW CORONAVIRUS IS SPREAD
-            </h4>
-            <h2>TRANSMISSION OF COVID-19
-            </h2>
-            <p> Because it's a new illness, we do not know exactly how coronavirus spreads from person to person.
-                Similar viruses are spread in cough droplets.
-            </p>
-            <div>
-                <div>
-                    <img src="Images/" alt="">
+    <section id="spread" class="container">
+        <div class="spread">
+            <div class="spreadContant">
+                <h4>
+                    HOW CORONAVIRUS IS SPREAD
+                </h4>
+                <h2>TRANSMISSION OF COVID-19
+                </h2>
+                <p> Because it's a new illness, we do not know exactly how coronavirus spreads from person to person.
+                    Similar viruses are spread in cough droplets.
+                </p>
+            </div>
+            <div class="spreadDetials row">
+                <div class=" details col-lg-4 col-md-6 col-sm-8 col-8">
+                    <img src="Images/spread-a.png" alt="">
                     <h4>Person-to-person spread as close contact with infected</h4>
-                    <p>The coronavirus is thought to spread mainly from person to person. This can happen between people
+                    <p>The coronavirus is thought to spread mainly from person to person. This can happen between
+                        people
                         who are in close contact with one another.</p>
                 </div>
-
-                <div>
-                    <img src="Images/" alt="">
+                <div class=" details col-lg-4 col-md-6 col-sm-8 col-8">
+                    <img src="Images/spread-b.png" alt="">
                     <h4>Touching or contact with infected surfaces or objects</h4>
-                    <p>The coronavirus is thought to spread mainly from person to person. This can happen between people
+                    <p>The coronavirus is thought to spread mainly from person to person. This can happen between
+                        people
                         who are in close contact with one another.</p>
                 </div>
-
-                <div>
-                    <img src="Images/" alt="">
+                <div class="col-lg-4 details col-md-6 col-sm-8 col-8">
+                    <img src="Images/spread-c.png" alt="">
                     <h4>Droplets that from infected person coughs or sneezes</h4>
                     <p>The coronavirus is thought to spread mainly from person
                         to person. This can happen between people who are in close contact with one another.</p>
                 </div>
             </div>
-            <a>Have question about spreading?</a>
+            <div class="question">
+                <a>Have question about spreading?</a>
+            </div>
         </div>
-        </section>
-        <section>
-            <h4>
-                WHAT ARE THE SYMPTOMS OF COVID-19?
-            </h4>
-            <h2>SYMPTOMS OF CORONAVIRUS
-            </h2>
-            <p> The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches
-                and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and
-                begin gradually. Also the symptoms may appear 2-14 days after exposure.
-            </p>
+    </section>
+
+    <!-- ********************************************************************************************
+                                    symptoms
+        ************************************************************************************************* -->
+    <section id="symptoms" class="box container">
+        <div class="symptoms">
+            <div class="symptomsContant">
+                <h4>
+                    WHAT ARE THE SYMPTOMS OF COVID-19?
+                </h4>
+                <h2>SYMPTOMS OF CORONAVIRUS
+                </h2>
+                <p> The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have
+                    aches
+                    and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild
+                    and
+                    begin gradually. Also the symptoms may appear 2-14 days after exposure.
+                </p>
+            </div>
             <div>
-                <div>
-                    <div><img src="" alt="">
+                <div class=" symptomsDetials row">
+                    <div class="details col-lg-4 col-md-5 col-9 col-sm-9">
+                        <div class="symptomsDetialsImg">
+                            <img src="Images/symptom-a.png" alt="">
+                        </div>
                         <h5>
                             Fever
                         </h5>
@@ -221,10 +242,10 @@
                             affected.
                         </p>
                     </div>
-                </div>
-
-                <div>
-                    <div><img src="" alt="">
+                    <div class="details col-lg-4 col-md-5 col-9 col-sm-9">
+                        <div class="symptomsDetialsImg">
+                            <img src="Images/symptom-b.png" alt="">
+                        </div>
                         <h5>
                             Cough
                         </h5>
@@ -233,9 +254,10 @@
                             episodes in 24 hours (if you usually have a cough, it may be worse than usual).
                         </p>
                     </div>
-                </div>
-                <div>
-                    <div><img src="" alt="">
+                    <div class="details col-lg-4 col-md-5 col-9 col-sm-9">
+                        <div class="symptomsDetialsImg">
+                            <img src="Images/symptom-c.png" alt="">
+                        </div>
                         <h5>
                             Shortness of breath
                         </h5>
@@ -256,19 +278,235 @@
                 <a>
                     <i class="ti-help-alt"></i>Have question? Find answer.</a>
             </div>
+        </div>
+    </section>
+    <!-- ********************************************************************************************
+                                    PROTECT
+        ************************************************************************************************* -->
+    <section>
+        <div class="protect">
+            <div class="protectContant">
+                <h4>
+                    HOW TO PROTECT YOURSELF?
+                </h4>
+                <h2>PREVENTION & ADVICE
+                </h2>
+                <p>
+                    There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19). The best way to
+                    prevent illness is to avoid being exposed to this virus. Stay aware of the latest information on the
+                    COVID-19 outbreak, available on the WHO website and through your national and local public health
+                    authority.
+                </p>
+            </div>
+            <div>
+                <div>
+                    <img src="Images/advice-a.png">
+                    <h6>Wash your hands frequently</h6>
+                    <p>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap
+                        and water for at least 20 seconds.
+                    </p>
+                </div>
+                <div>
+                    <img src="Images/advice-b.png">
+                    <h6>Maintain social distancing</h6>
+                    <p>Maintain at least 1 metre (3 feet) distance between yourself & anyone who is coughing or
+                        sneezing. If you are too close, get chance to infected.
+                    </p>
+                </div>
+                <div>
+                    <img src="Images/advice-b.png">
+                    <h6>Avoid touching face</h6>
+                    <p>Hands touch many surfaces and can pick up viruses. So, hands can transfer the virus to your eyes,
+                        nose or mouth and can make you sick.
+                    </p>
+                </div>
+                <div>
+                    <img src="Images/advice-b.png">
+                    <h6>Practice respiratory hygiene</h6>
+                    <p>Maintain good respiratory hygiene as covering your mouth & nose with your bent elbow or tissue
+                        when cough or sneeze.
+                    </p>
+                </div>
+            </div>
+            <div class="links">
+                <a>
+                    Check how you wash hand
+                </a>
+                <a>Q&A on Coronaviruses </a>
+            </div>
+        </div>
+    </section>
 
-        </section>
-    </main>
+    <section>
+        <div>
+            <div>
+                <h3>Take steps to protect others</h3>
+                <div>
+                    <i></i>
+                    <p>
+                        Stay home if you’re sick – Stay home if you are sick, except to get medical care.</p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>Cover your mouth and nose – with a tissue when you cough or sneeze (throw used tissues in the
+                        trash) or use the inside of your elbow.
+                    </p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>Wear a facemask if you are sick – You should wear a facemask when you are around other people
+                        (e.g., sharing a room or vehicle) and before you enter a healthcare provider’s
+                    </p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>Clean AND disinfect frequently touched surfaces daily – This includes phones, tables, light
+                        switches, doorknobs, countertops, handles, desks, toilets, faucets, and sinks.
+                    </p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>Clean the dirty surfaces – Use detergent or soap and water prior to disinfection.
+                    </p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>Stay informed about the local COVID-19 situation – Get up-to-date information about local
+                        COVID-19 activity from public health officials.
+                    </p>
+                </div>
+                <div>
+                    <i></i>
+                    <p>Dedicated, lined trash can – If possible, dedicate a lined trash can for the ill person. Use
+                        gloves when removing garbage bags, and handling & disposing of trash.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="Images/steps.png">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div>
+                <h3>
+                    Follow steps to wash hands</h3>
+                <a>
+                    Why do I need wash hand </a>
+            </div>
+            <div>
+                <div>
+                    <img src="Images/hand-a.png">
+                    <h6>Soap on Hand</h6>
+                </div>
+
+                <div>
+                    <img src="Images/hand-b.png">
+                    <h6>Palm to Palm</h6>
+                </div>
+                <div>
+                    <img src="Images/hand-c.png">
+                    <h6>Between Fingers</h6>
+                </div>
+                <div>
+                    <img src="Images/hand-d.png">
+                    <h6>Back to Hands</h6>
+                </div>
+                <div>
+                    <img src="Images/hand-e.png">
+                    <h6>Clean with Water</h6>
+                </div>
+                <div>
+                    <img src="Images/hand-f.png">
+                    <h6>Focus on Wrist</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div>
+                <h4>
+                    BE CAREFULL & STAY SAFE
+                </h4>
+                <h2>
+                    TREATMENT FOR CORONAVIRUS
+                </h2>
+                <p>
+                    To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019.
+                    However, those affected should receive care to relieve symptoms. People with serious illness should
+                    be hospitalized. Most patients recover thanks to supportive care.
+                </p>
+                <p>Antibiotics do not help, as they do not work against viruses. Treatment aims to relieve the symptoms
+                    while your body fights the illness. You'll need to stay in isolation, away from other people, until
+                    you have recovered.
+                </p>
+            </div>
+            <div>
+                <h6>self Care</h6>
+                <p> If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms if
+                    you:
+                </p>
+                <div>
+                    <div>
+                        <i></i>
+                        <p>Rest and sleep</p>
+                    </div>
+                    <div>
+                        <i></i>
+                        <p>Keep warm</p>
+                    </div>
+                    <div>
+                        <i></i>
+                        <p>
+                            Drink plenty of liquids</p>
+                    </div>
+                    <div>
+                        <i></i>
+                        <p>
+                            Use a room humidifier or take a hot shower to help ease a sore throat and cough
+                            Medical Treatments
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in
+                    advance and tell your health provider of any recent travel or recent contact with travelers.
+                </p>
+            </div>
+        </div>
+    </section>
     <footer>
+        CVID19
+This website is for health information and advice about coronavirus (COVID-19), how to prevent and protect yourself from disease.
 
+Learn about the government response to coronavirus on GOV.UK.
 
+QUICK LINK
+About Corona
+Symptoms
+Prevention
+Protect Youself
+FAQs
+HELPFULL LINK
+Healthcare Professionals
+Healthcare Facilities
+Older Adults & Medical Conditions
+Repare your Family
+IMPORTANT LINK
+WHO Website
+CDC Website
+NHS Website
+Harvard Health
+© 2020 COVID-19. Template Made by Mina Karam Ghoprial .
+
+Privacy Policy
+Disclaimer: We hope you find the information presented on this website useful. This website is for general information and raise awareness of (2019-nCoV) only.
+
+All the information based on WHO, NHS and CDC website. Information on our website is meant for awareness, if you have any doubt please verify from respective site.
     </footer>
-    <!-- <script src="Js/bootstrap.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <script src="Js/jquery-3.5.1.min.js"></script> -->
-    <script src="Js/main.js"></script>
+    <script src="Js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

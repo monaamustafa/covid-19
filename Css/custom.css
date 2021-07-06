@@ -123,7 +123,7 @@ margin: 30px 0;
     /* top: -98px;
     left: 250px; */
 }
-/*  */
+/* *********************************************protect********************************************************* */
 .protect{
     padding: 100px 0;
 }
@@ -141,9 +141,6 @@ margin: 30px 0;
 .protect .links{
     display: flex;
     justify-content: space-around;
-}
-.protectOthers{
-/* display: flex; */
 }
 .protectOthersContent p{
     /* width: 70%; */
@@ -164,9 +161,6 @@ margin: 30px 0;
 .doAndDontContantDetails{
     display: flex;
 }
-
-
-
 .blogContant img{
     width: 80%;
 }

@@ -98,7 +98,8 @@ a{
     padding: 100px 0;
 }
 .symptoms .symptomsDetials{
-    justify-content: space-between;
+    justify-content: space-around;
+    
     
 }
 .symptomsDetialsImg{
@@ -110,9 +111,10 @@ a{
 
 .symptoms .symptomsDetials .details{
 border: 1px solid #7d92bb;
+padding: 30px 20px;
 position: relative;
 margin: 30px 0;
-padding: 0;
+/* padding: 0; */
 }
 .symptoms .symptomsDetials .details img{
     border-radius: 50%;
@@ -120,4 +122,51 @@ padding: 0;
     /* size: 20px; */
     /* top: -98px;
     left: 250px; */
+}
+/*  */
+.protect{
+    padding: 100px 0;
+}
+.protectContant{
+    text-align: center;
+    padding: 100px 0;
+}
+.protectdetails .details{
+    text-align: center;
+}
+.protectdetails .details img{
+    border-radius: 50%;
+    width: 150px;
+}
+.protect .links{
+    display: flex;
+    justify-content: space-around;
+}
+.protectOthers{
+/* display: flex; */
+}
+.protectOthersContent p{
+    /* width: 70%; */
+    display: inline;
+}
+.protectOthersImage img{
+    width: 100%;
+}
+/*************************************** do And Dont ************************************************/
+.doAndDontContant{
+    justify-content: space-around;
+    align-items: center;
+}
+.doAndDontImage img{
+    width: 100%;
+    /* height: 100%; */
+}
+.doAndDontContantDetails{
+    display: flex;
+}
+
+
+
+.blogContant img{
+    width: 80%;
 }

@@ -10,9 +10,9 @@
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Base CSS -->
-    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="Css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
     <link href="Css/bootstrap-grid.css " rel="stylesheet">
     <link href="Css/custom.css" rel="stylesheet">
@@ -27,16 +27,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white ">
-            <div class="container">
-                <a class="navbar-brand">C<i class="fas fa-viruses"></i>vid<span>19</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <nav class="fixed-top">
+            <div class="container-fluid nav-nav">
+                <a class="navbar-brand">C<i class="fas fa-viruses logo"></i>vid<span>19</span></a>
+                <div>
+                    <ul>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page">Home</a>
                         </li>
@@ -59,13 +54,18 @@
                             <a class="nav-link">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Do & don't</a>
+                            <a class="nav-link btnLink">Do & don't</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section id="home" class=" HomeBanner container box">
+    </header>
+    <!-- ********************************************************************************************
+                                    home
+        ************************************************************************************************* -->
+    <section id="home" class=" HomeBanner navbarItem  mainSection">
+        <div class="container">
             <div class=" row ">
                 <div class="homeContent col-lg-6 col-md-6 col-sm-12">
                     <div class="heading">
@@ -81,8 +81,14 @@
                         outbreak
                         was later recognized as a pandemic by the World Health Organization (WHO) on 11 March 2020.</p>
                     <div class="links">
-                        <a href="" class="link-as-btn">How to Protect<i class="fas fa-user-shield"></i> </a>
-                        <a href="">About COVID-19 <i class="fas fa-arrow-right"></i></a>
+                        <div class="linksContant btnLink">
+                            <a href="" class="">How to Protect </a>
+                                <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div>
+                            <a href="">About COVID-19 
+                                <i class="fas fa-arrow-right"></i>
+                        </div>
                     </div>
                     <div class="cronaCases">
                         <div class="cases">
@@ -104,64 +110,65 @@
                     <img src="Images/header-a.png" alt="header-a">
                 </div>
             </div>
-        </section>
-
-    </header>
+        </div>
+    </section>
     <!-- ********************************************************************************************
                                     about
         ************************************************************************************************* -->
-    <section id="about " class="box container">
-        <div class="about flexBox row">
-            <div class="aboutContent  col-lg-7 col-md-6 col-sm-12 ">
-                <h5> ABOUT THE DISEASE</h5>
-                <h3>CORONAVIRUS (COVID-19)</h3>
-                <p>
-                    <span> COVID-19 is a new illness that can affect your lungs and airways.</span>
-                    It's caused by a virus called coronavirus. It was discovered in December 2019 in Wuhan, Hubei,
-                    China.
-                    <p>Common signs of infection include respiratory symptoms, fever, cough, shortness of breath
-                        and
-                        breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute
-                        respiratory syndrome, kidney failure and even death.</p>
+    <section id="about " class=" navbarItem mainSection">
+        <div class="container">
+            <div class="about flexBox row">
+                <div class="aboutContent  col-lg-7 col-md-6 col-sm-12 ">
+                    <h5> ABOUT THE DISEASE</h5>
+                    <h3>CORONAVIRUS (COVID-19)</h3>
                     <p>
-                        Standard recommendations to prevent infection spread include regular hand washing, covering
-                        mouth
-                        and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact
-                        with
-                        anyone showing symptoms of respiratory illness such as coughing and sneezing.
-                    </p>
-            </div>
-            <div class="aboutdetails col-lg-5 col-md-6 col-sm-12 ">
-                <h5> What you need to know</h5>
-                <div class="details">
-                    <a href="">How coronavirus is spread</a>
-                    <i class="fas fa-arrow-right icon"></i>
-                    <!-- <i class="ti-arrow-right"></i> -->
+                        <span> COVID-19 is a new illness that can affect your lungs and airways.</span>
+                        It's caused by a virus called coronavirus. It was discovered in December 2019 in Wuhan, Hubei,
+                        China.
+                        <p>Common signs of infection include respiratory symptoms, fever, cough, shortness of breath
+                            and
+                            breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute
+                            respiratory syndrome, kidney failure and even death.</p>
+                        <p>
+                            Standard recommendations to prevent infection spread include regular hand washing, covering
+                            mouth
+                            and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact
+                            with
+                            anyone showing symptoms of respiratory illness such as coughing and sneezing.
+                        </p>
                 </div>
-                <div class="details">
-                    <a href="">Symptoms of coronavirus</a>
-                    <i class="fas fa-arrow-right icon"></i>
-                    <!-- <i class="ti-arrow-right"></i> -->
-                </div>
-                <div class="details">
-                    <a href="">How to protect yourself</a>
-                    <i class="fas fa-arrow-right icon"></i>
-                    <!-- <i class="ti-arrow-right"></i> -->
-                </div>
-                <div class="details">
-                    <a href="">Treatment for coronavirus</a>
-                    <i class="fas fa-arrow-right icon"></i>
-                    <!-- <i class="ti-arrow-right"></i> -->
-                </div>
-                <div class="details">
-                    <a href="">Myth-Busters of coronavirus</a>
-                    <i class="fas fa-arrow-right icon"></i>
-                    <!-- <i class="ti-arrow-right"></i> -->
-                </div>
-                <div class="details">
-                    <a href="">Questions & answers</a>
-                    <i class="fas fa-arrow-right icon"></i>
-                    <!-- <i class="ti-arrow-right "></i> -->
+                <div class="aboutdetails col-lg-5 col-md-6 col-sm-12 ">
+                    <h5> What you need to know</h5>
+                    <div class="details">
+                        <a href="">How coronavirus is spread</a>
+                        <i class="fas fa-arrow-right icon"></i>
+                        <!-- <i class="ti-arrow-right"></i> -->
+                    </div>
+                    <div class="details">
+                        <a href="">Symptoms of coronavirus</a>
+                        <i class="fas fa-arrow-right icon"></i>
+                        <!-- <i class="ti-arrow-right"></i> -->
+                    </div>
+                    <div class="details">
+                        <a href="">How to protect yourself</a>
+                        <i class="fas fa-arrow-right icon"></i>
+                        <!-- <i class="ti-arrow-right"></i> -->
+                    </div>
+                    <div class="details">
+                        <a href="">Treatment for coronavirus</a>
+                        <i class="fas fa-arrow-right icon"></i>
+                        <!-- <i class="ti-arrow-right"></i> -->
+                    </div>
+                    <div class="details">
+                        <a href="">Myth-Busters of coronavirus</a>
+                        <i class="fas fa-arrow-right icon"></i>
+                        <!-- <i class="ti-arrow-right"></i> -->
+                    </div>
+                    <div class="details">
+                        <a href="">Questions & answers</a>
+                        <i class="fas fa-arrow-right icon"></i>
+                        <!-- <i class="ti-arrow-right "></i> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,8 +176,8 @@
     <!-- ********************************************************************************************
                                         spread
         ************************************************************************************************* -->
-    <section id="spread" class="container">
-        <div class="spread">
+    <section id="spread" class="mainSection ">
+        <div class="spread container">
             <div class="spreadContant">
                 <h4>
                     HOW CORONAVIRUS IS SPREAD
@@ -208,12 +215,11 @@
             </div>
         </div>
     </section>
-
     <!-- ********************************************************************************************
                                     symptoms
         ************************************************************************************************* -->
-    <section id="symptoms" class="box container">
-        <div class="symptoms">
+    <section id="symptoms" class="mainSection navbarItem ">
+        <div class="symptoms container">
             <div class="symptomsContant">
                 <h4>
                     WHAT ARE THE SYMPTOMS OF COVID-19?
@@ -283,7 +289,7 @@
     <!-- ********************************************************************************************
                                     PROTECT
         ************************************************************************************************* -->
-    <section id="Protect" class="protect">
+    <section id="Protect" class="mainSection navbarItem">
         <div class="protect container">
             <div class="protectContant">
                 <h4>
@@ -391,7 +397,7 @@
     <!-- ********************************************************************************************
                                     steps
         ************************************************************************************************* -->
-    <section id="steps" class="  steps">
+    <section id="steps" class=" mainSection steps">
         <div class="stepsContent container ">
             <div>
                 <h3>
@@ -429,8 +435,7 @@
     <!-- ********************************************************************************************
                                     steps
         ************************************************************************************************* -->
-
-    <section>
+    <section class="mainSection navbarItem">
         <div>
             <div>
                 <h4>
@@ -486,76 +491,11 @@
     <!-- ********************************************************************************************
                                     steps
         ************************************************************************************************* -->
-    <section id="doAndDont" class="container">
-        <div class="doAndDont">
-            <h4>
-                DO’S & DON’TS
-            </h4>
-            <h2>
-                PROTECT YOURSELF
-            </h2>
-            <p>
-                The best thing you can do now is plan for how you can adapt your daily routine. Take few steps to
-                protect yourself as Clean your hands often, Avoid close contact, Cover coughs and sneezes, clean daily
-                used surfaces etc. The best way to prevent illness is to avoid being exposed to this virus.
-            </p>
-            <div class="row doAndDontContant">
-                <div class="col-lg-3 ">
-                    <div class="doAndDontContantDetails">
-                        <h6>Avoid Close Contact</h6>
-                        <div>
-                            <img src="Images/donts-a.png">
-                            <i class="far fa-times-circle"></i>
-                        </div>
-                    </div>
-                    <div class="doAndDontContantDetails">
-                        <h6>Don’t Touch Face</h6>
-                        <div>
-                            <img src="Images/donts-b.png">
-                            <i class="far fa-times-circle"></i>
-                        </div>
-                    </div>
-                    <div class="doAndDontContantDetails">
-                        <h6>Social Distancing</h6>
-                        <div>
-                            <img src="Images/donts-c.png">
-                            <i class="far fa-times-circle"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 doAndDontImage">
-                    <img src="Images/protect.png" alt="protect">
-                </div>
-                <div class="col-lg-3 ">
-                    <div class="doAndDontContantDetails">
-                        <div>
-                            <img src="Images/dos-a.png">
-                            <i class="far fa-check-circle"></i>
-                        </div>
-                        <h6>Wash Your Hands</h6>
-                    </div>
-                    <div class="doAndDontContantDetails">
-                        <div>
-                            <img src="Images/dos-b.png">
-                            <i class="far fa-check-circle"></i>
-                        </div>
-                        <h6>Drink Much Watar</h6>
-                    </div>
-                    <div class="doAndDontContantDetails">
-                        <div>
-                            <img src="Images/dos-c.png">
-                            <i class="far fa-check-circle"></i>
-                        </div>
-                        <h6>Use Face Mask</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- ********************************************************************************************
                                     steps
         ************************************************************************************************* -->
-    <section>
+    <section class="mainSection navbarItem">
         <div>
             <h4>FREQUENTLY ASKED QUESTIONS</h4>
             <h2>COMMON QUESTION & ANSWER</h2>
@@ -652,7 +592,7 @@
     <!-- ********************************************************************************************
                                         BLOG
             ************************************************************************************************* -->
-    <section>
+    <section class="mainSection navbarItem">
         <div class="container">
             <h4> RECENT FROM BLOG</h4>
             <h2>LATEST UPDATE</h2>
@@ -681,70 +621,145 @@
             </div>
         </div>
     </section>
+    <!-- ******************************************************************************************************
+                                        do And Dont
+    ********************************************************************************************************** -->
+    <section id="doAndDont" class="mainSection navbarItem">
+        <div class="doAndDont container">
+            <h4>
+                DO’S & DON’TS
+            </h4>
+            <h2>
+                PROTECT YOURSELF
+            </h2>
+            <p>
+                The best thing you can do now is plan for how you can adapt your daily routine. Take few steps to
+                protect yourself as Clean your hands often, Avoid close contact, Cover coughs and sneezes, clean daily
+                used surfaces etc. The best way to prevent illness is to avoid being exposed to this virus.
+            </p>
+            <div class="row doAndDontContant">
+                <div class="col-lg-3 ">
+                    <div class="doAndDontContantDetails">
+                        <h6>Avoid Close Contact</h6>
+                        <div>
+                            <img src="Images/donts-a.png">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <div class="doAndDontContantDetails">
+                        <h6>Don’t Touch Face</h6>
+                        <div>
+                            <img src="Images/donts-b.png">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <div class="doAndDontContantDetails">
+                        <h6>Social Distancing</h6>
+                        <div>
+                            <img src="Images/donts-c.png">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 doAndDontImage">
+                    <img src="Images/protect.png" alt="protect">
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="doAndDontContantDetails">
+                        <div>
+                            <img src="Images/dos-a.png">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                        <h6>Wash Your Hands</h6>
+                    </div>
+                    <div class="doAndDontContantDetails">
+                        <div>
+                            <img src="Images/dos-b.png">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                        <h6>Drink Much Watar</h6>
+                    </div>
+                    <div class="doAndDontContantDetails">
+                        <div>
+                            <img src="Images/dos-c.png">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                        <h6>Use Face Mask</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ********************************************************************************************
                                         footer
             ************************************************************************************************* -->
 
-    <footer class="container">
-        <div class="row">
-            <div class="col-lg-4" >
-                <h3>C<i class=" fas fa-viruses"></i>VID19</h3>
-                <p> This website is for health information and advice about coronavirus (COVID-19), how to prevent and
-                    protect yourself from disease.
-                </p>
-                <p> Learn about the government response to coronavirus on GOV.UK.
-                </p>
-                <div class="socialLinks">
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up "></i>
+    </div>
+    <footer class=" footer mainSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>C<i class=" fas fa-viruses"></i>VID19</h3>
+                    <p> This website is for health information and advice about coronavirus (COVID-19), how to prevent
+                        and
+                        protect yourself from disease.
+                    </p>
+                    <p> Learn about the government response to coronavirus on GOV.UK.
+                    </p>
+                    <div class="socialLinks">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h3> QUICK LINK
+                    </h3>
+                    <ul>
+                        <li>About Corona</li>
+                        <li>Symptoms</li>
+                        <li>Prevention</li>
+                        <li>Protect Youself</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h3>HELPFULL LINK</h3>
+                    <ul>
+                        <li>Healthcare Professionals</li>
+                        <li>Healthcare Facilities</li>
+                        <li>Older Adults & Medical Conditions</li>
+                        <li>Repare your Family</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h3>IMPORTANT LINK</h3>
+                    <ul>
+                        <li>WHO Website</li>
+                        <li>CDC Website</li>
+                        <li>NHS Website</li>
+                        <li>Harvard Health</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-2">
-                <h3> QUICK LINK
-                </h3>
-                <ul>
-                    <li>About Corona</li>
-                    <li>Symptoms</li>
-                    <li>Prevention</li>
-                    <li>Protect Youself</li>
-                    <li>FAQs</li>
-
-                </ul>
-            </div>
-            <div class="col-lg-2">
-                <h3>HELPFULL LINK</h3>
-                <ul>
-                    <li>Healthcare Professionals</li>
-                    <li>Healthcare Facilities</li>
-                    <li>Older Adults & Medical Conditions</li>
-                    <li>Repare your Family</li>
-                </ul>
-            </div>
-            <div class="col-lg-2">
-                <h3>IMPORTANT LINK</h3>
-                <ul>
-                    <li>WHO Website</li>
-                    <li>CDC Website</li>
-                    <li>NHS Website</li>
-                    <li>Harvard Health</li>
-                </ul>
-            </div>
-        </div>
-        <div>
             <div>
-                <p> © 2020 COVID-19. Template Made by Mina Karam Ghoprial .
-                </p>
-                <p><small>
-                        Privacy Policy</small></p>
+                <div>
+                    <p> © 2020 COVID-19. Template Made by Mina Karam Ghoprial .
+                    </p>
+                    <p><small>
+                            Privacy Policy</small></p>
+                </div>
+                <p><small> Disclaimer: We hope you find the information presented on this website useful. This website
+                        is
+                        for general
+                        information and raise awareness of (2019-nCoV) only.
+                        All the information based on WHO, NHS and CDC website. Information on our website is meant for
+                        awareness, if you
+                        have any doubt please verify from respective site.
+                    </small></p>
             </div>
-            <p><small> Disclaimer: We hope you find the information presented on this website useful. This website is
-                    for general
-                    information and raise awareness of (2019-nCoV) only.
-                    All the information based on WHO, NHS and CDC website. Information on our website is meant for
-                    awareness, if you
-                    have any doubt please verify from respective site.
-                </small></p>
         </div>
     </footer>
-    <script src="Js/bootstrap.bundle.js"></script>
+    <script src="Js/main.js"></script>
 </body>
 
 </html>

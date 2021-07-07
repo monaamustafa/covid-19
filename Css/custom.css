@@ -1,15 +1,136 @@
-*{
+:root {
+    --pinkColor: #FF5363;
+    --blueColor: #2a81ea;
+
+    --whiteColor: #f5f6fa;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-a{
+
+body {
+    font-family: var(--bs-font-sans-serif)
+}
+
+a {
     text-decoration: none;
 }
+
+ul {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+li {
+    list-style-type: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    ul{
+        display: none;
+    }
+}
+/* *******************************General  styles*********************************************** */
+.mainSection {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.btnLink {
+    color: var(--whiteColor) !important;
+    background-color: var(--blueColor);
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+a.btnLink:hover {
+    background-color: #3171c0;
+}
+.diffcolor{
+    color: var(--pinkColor);
+}
+p{
+    color: #3d4b69;
+}
+.numbers{
+    color:#465675;
+    font-size: 30px;
+    font-weight: 900;
+}
+.links{
+    
+}
+/* ****************************header************************************************ */
+.nav-nav {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: #50658e;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.navbar-brand .logo {
+    color: var(--pinkColor);
+}
+
+a.nav-link {
+    font-weight: 700;
+    color: #50658e;
+    font-size: 14px;
+}
+a.nav-link:hover {
+    color: var(--blueColor);
+}
+.active {
+    color: var(--blueColor);
+}
+a.active {
+    color: var(--blueColor);
+}
+.nav-bg{
+    background-color: #f5f6fa;
+}
+.scroll-top{
+    background-color: #e67e22;
+    border-radius: 50%;
+    height: 50px; 
+    width: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    display: none;
+}
+
 /* ****************************************************************************** */
 .HomeBanner {
-    padding: 100px 0;
-    text-align: center;
+    /* padding: 100px 0; */
+    /* text-align: center; */
+    background-image: url(../Images/shape-a.png);
+    background-color: aliceblue;
+    mix-blend-mode: darken;
 }
 
 /* heading */
@@ -18,8 +139,17 @@ a{
     align-items: center;
     justify-content: center;
     padding: 50px 0 30px;
+    color: #50658e;
 }
+.heading h1{
+    font-size: 80px;
+    font-weight: 900;
+}
+.subHeading{
+font-size: 30px;
+font-weight: 700;
 
+}
 /* home image */
 .homeImg img {
     width: 100%;
@@ -30,19 +160,18 @@ a{
 .HomeBanner .links {
     margin: 10% 20%;
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.HomeBanner .links a {
-    display: block;
+.linksContant{
+    display: flex;
 }
-
-
 /* cases */
 
 .cronaCases {
-    display: flex;  
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -50,10 +179,13 @@ a{
 }
 
 @media only screen and (max-width: 1200px) {
-    .HomeBanner .links a,  .cronaCases .cases {
+
+    .HomeBanner .links a,
+    .cronaCases .cases {
         width: 100%;
     }
 }
+
 /* **********************************About********************************************************* */
 
 .aboutdetails {
@@ -74,93 +206,119 @@ a{
 }
 
 /* ******************************************spread********************************************************* */
-.spreadContant{
+.spreadContant {
     text-align: center;
     padding: 100px 0;
 }
-.spreadDetials{
+
+.spreadDetials {
     justify-content: space-around;
 }
-.spreadDetials .details img{
+
+.spreadDetials .details img {
     width: 100%;
     border-bottom: 8px solid #7d92bb;
 
 }
-.spread .question{
+
+.spread .question {
     text-align: center;
 }
-/* *********************************************symptoms********************************************************* */
-.symptoms{
 
-}
-.symptoms .symptomsContant{
+/* *********************************************symptoms********************************************************* */
+.symptoms {}
+
+.symptoms .symptomsContant {
     text-align: center;
     padding: 100px 0;
 }
-.symptoms .symptomsDetials{
+
+.symptoms .symptomsDetials {
     justify-content: space-around;
-    
-    
+
+
 }
-.symptomsDetialsImg{
+
+.symptomsDetialsImg {
     width: 80px;
     position: absolute;
     top: -26%;
     left: 68%;
 }
 
-.symptoms .symptomsDetials .details{
-border: 1px solid #7d92bb;
-padding: 30px 20px;
-position: relative;
-margin: 30px 0;
-/* padding: 0; */
+.symptoms .symptomsDetials .details {
+    border: 1px solid #7d92bb;
+    padding: 30px 20px;
+    position: relative;
+    margin: 30px 0;
+    /* padding: 0; */
 }
-.symptoms .symptomsDetials .details img{
+
+.symptoms .symptomsDetials .details img {
     border-radius: 50%;
     width: 100%;
     /* size: 20px; */
     /* top: -98px;
     left: 250px; */
 }
+
 /* *********************************************protect********************************************************* */
-.protect{
-    padding: 100px 0;
+.protect {
+    /* padding: 100px 0; */
 }
-.protectContant{
+
+.protectContant {
     text-align: center;
-    padding: 100px 0;
+    /* padding: 100px 0; */
 }
-.protectdetails .details{
+
+.protectdetails .details {
     text-align: center;
 }
-.protectdetails .details img{
+
+.protectdetails .details img {
     border-radius: 50%;
     width: 150px;
 }
-.protect .links{
+
+.protect .links {
     display: flex;
     justify-content: space-around;
 }
-.protectOthersContent p{
+
+.protectOthersContent p {
     /* width: 70%; */
     display: inline;
 }
-.protectOthersImage img{
+
+.protectOthersImage img {
     width: 100%;
 }
+
 /*************************************** do And Dont ************************************************/
-.doAndDontContant{
+.doAndDontContant {
     justify-content: space-around;
     align-items: center;
 }
-.doAndDontImage img{
+
+.doAndDontImage img {
     width: 100%;
     /* height: 100%; */
 }
-.doAndDontContantDetails{
+
+.doAndDontContantDetails {
     display: flex;
 }
-.blogContant img{
+
+.blogContant img {
     width: 80%;
+}
+
+/*************************************** footer ************************************************/
+footer {
+
+    background-image: url(../Images/shape-a.png);
+    background-color: blue;
+    mix-blend-mode: darken;
+    padding: 0;
 }

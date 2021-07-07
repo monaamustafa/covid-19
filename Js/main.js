@@ -1,14 +1,12 @@
 // dynamic padding top each section 
-window.addEventListener('load', function () {
-    let navbar = document.querySelector('ul');
-    let content = document.querySelectorAll('.box');
+// window.addEventListener('load', function () {
+//     let navbar = document.querySelector('header');
+//     let content = document.querySelectorAll('.mainSection');
 
-    for (let k = 0; k < content.length; k++) {
-        content[k].style.paddingTop = navbar.clientHeight + "px";
-    }
-
-    // console.log(navbar.clientHeight);
-})
+//     for (let k = 0; k < content.length; k++) {
+//         content[k].style.paddingTop = navbar.clientHeight + "px";
+//     }
+// })
 //             Add Active Class  
 let link = document.querySelectorAll('ul li a');
 for (let i = 0; i < link.length; i++) {
@@ -22,28 +20,32 @@ for (let i = 0; i < link.length; i++) {
 //Scroll-top
 let bodyScroll = document.querySelector('html, body');
 let iconScroll = document.querySelector('.scroll-top');
-let navbar = document.querySelector('.navbar-nav');
+let navbar = document.querySelector('nav');
+console.log(navbar);
 
 window.addEventListener('scroll', function () {
-    if (bodyScroll.scrollTop >= 60) {
+    if (bodyScroll.scrollTop >= 40) {
         iconScroll.style.display = 'block';
-        navbar.classList.add('navbar-background');
+        navbar.classList.add('nav-bg');
     } else {
         iconScroll.style.display = 'none';
-        navbar.classList.remove('navbar-background');
+        navbar.classList.remove('nav-bg');
     }
 })
 // dynamic scroll
-let listItem = document.querySelectorAll('.menu li');
-let listItemII = document.querySelectorAll('.navbar ul li');
-let sectionItems = document.querySelectorAll('.box');
+let listItemII = document.querySelectorAll('nav ul li');
+let sectionItems = document.querySelectorAll('.navbarItem');
 console.log(listItemII.length + "" + sectionItems.length)
 for (let i = 0; i < listItemII.length; i++) {
     listItemII[i].addEventListener('click', () => {
         sectionItems[i].scrollIntoView({
             behavior: 'smooth',
-            block: 'center'
+            // block: 'center'
         });
-        listItemII[i].classList.add('active');
     });
 }
+// show more details
+
+
+
+

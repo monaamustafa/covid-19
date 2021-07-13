@@ -23,6 +23,9 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -81,14 +84,9 @@
                         outbreak
                         was later recognized as a pandemic by the World Health Organization (WHO) on 11 March 2020.</p>
                     <div class="links">
-                        <div class="linksContant btnLink">
-                            <a href="" class="">How to Protect </a>
-                                <i class="fas fa-user-shield"></i>
-                        </div>
-                        <div>
-                            <a href="">About COVID-19 
-                                <i class="fas fa-arrow-right"></i>
-                        </div>
+                        <a href="" class="btnLink">How to Protect
+                            <i class="fas fa-user-shield link_icon"></i> </a>
+                        <a href="" class="btnLinkTrans">About COVID-19 <i class="fas link_icon fa-arrow-right"></i></a>
                     </div>
                     <div class="cronaCases">
                         <div class="cases">
@@ -115,29 +113,31 @@
     <!-- ********************************************************************************************
                                     about
         ************************************************************************************************* -->
-    <section id="about " class=" navbarItem mainSection">
+    <section id="about " class=" navbarItem aboutaboutContent mainSection">
         <div class="container">
-            <div class="about flexBox row">
+            <div class="about row">
                 <div class="aboutContent  col-lg-7 col-md-6 col-sm-12 ">
-                    <h5> ABOUT THE DISEASE</h5>
-                    <h3>CORONAVIRUS (COVID-19)</h3>
-                    <p>
+                    <h4> ABOUT THE DISEASE</h4>
+                    <h2>CORONAVIRUS (COVID-19)</h2>
+                    <p class="mainP">
                         <span> COVID-19 is a new illness that can affect your lungs and airways.</span>
                         It's caused by a virus called coronavirus. It was discovered in December 2019 in Wuhan, Hubei,
                         China.
-                        <p>Common signs of infection include respiratory symptoms, fever, cough, shortness of breath
-                            and
-                            breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute
-                            respiratory syndrome, kidney failure and even death.</p>
-                        <p>
-                            Standard recommendations to prevent infection spread include regular hand washing, covering
-                            mouth
-                            and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact
-                            with
-                            anyone showing symptoms of respiratory illness such as coughing and sneezing.
-                        </p>
+                    </p>
+                    <p class="mainP">Common signs of infection include respiratory symptoms, fever, cough, shortness of
+                        breath
+                        and
+                        breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute
+                        respiratory syndrome, kidney failure and even death.</p>
+                    <p class="mainP">
+                        Standard recommendations to prevent infection spread include regular hand washing, covering
+                        mouth
+                        and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact
+                        with
+                        anyone showing symptoms of respiratory illness such as coughing and sneezing.
+                    </p>
                 </div>
-                <div class="aboutdetails col-lg-5 col-md-6 col-sm-12 ">
+                <div class="aboutdetails col-lg-4 col-md-6 col-sm-12 ">
                     <h5> What you need to know</h5>
                     <div class="details">
                         <a href="">How coronavirus is spread</a>
@@ -176,8 +176,8 @@
     <!-- ********************************************************************************************
                                         spread
         ************************************************************************************************* -->
-    <section id="spread" class="mainSection ">
-        <div class="spread container">
+    <section id="spread" class="mainSection spread ">
+        <div class=" container">
             <div class="spreadContant">
                 <h4>
                     HOW CORONAVIRUS IS SPREAD
@@ -191,27 +191,33 @@
             <div class="spreadDetials row">
                 <div class=" details col-lg-4 col-md-6 col-sm-8 col-8">
                     <img src="Images/spread-a.png" alt="">
-                    <h4>Person-to-person spread as close contact with infected</h4>
-                    <p>The coronavirus is thought to spread mainly from person to person. This can happen between
-                        people
-                        who are in close contact with one another.</p>
+                    <div class="spreadDetialsContant">
+                        <h4>Person-to-person spread as close contact with infected</h4>
+                        <p>The coronavirus is thought to spread mainly from person to person. This can happen between
+                            people
+                            who are in close contact with one another.</p>
+                    </div>
                 </div>
                 <div class=" details col-lg-4 col-md-6 col-sm-8 col-8">
                     <img src="Images/spread-b.png" alt="">
-                    <h4>Touching or contact with infected surfaces or objects</h4>
-                    <p>The coronavirus is thought to spread mainly from person to person. This can happen between
-                        people
-                        who are in close contact with one another.</p>
+                    <div class="spreadDetialsContant">
+                        <h4>Touching or contact with infected surfaces or objects</h4>
+                        <p>The coronavirus is thought to spread mainly from person to person. This can happen between
+                            people
+                            who are in close contact with one another.</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 details col-md-6 col-sm-8 col-8">
                     <img src="Images/spread-c.png" alt="">
-                    <h4>Droplets that from infected person coughs or sneezes</h4>
-                    <p>The coronavirus is thought to spread mainly from person
-                        to person. This can happen between people who are in close contact with one another.</p>
+                    <div class="spreadDetialsContant">
+                        <h4>Droplets that from infected person coughs or sneezes</h4>
+                        <p>The coronavirus is thought to spread mainly from person
+                            to person. This can happen between people who are in close contact with one another.</p>
+                    </div>
                 </div>
             </div>
             <div class="question">
-                <a>Have question about spreading?</a>
+                <a class="btnLink"><i class="far fa-question-circle link_icon"></i>Have question about spreading?</a>
             </div>
         </div>
     </section>
@@ -226,63 +232,65 @@
                 </h4>
                 <h2>SYMPTOMS OF CORONAVIRUS
                 </h2>
-                <p> The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have
+                <p class="centerP"> The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some
+                    patients may have
                     aches
                     and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild
                     and
                     begin gradually. Also the symptoms may appear 2-14 days after exposure.
                 </p>
             </div>
-            <div>
-                <div class=" symptomsDetials row">
-                    <div class="details col-lg-4 col-md-5 col-9 col-sm-9">
-                        <div class="symptomsDetialsImg">
-                            <img src="Images/symptom-a.png" alt="">
-                        </div>
-                        <h5>
-                            Fever
-                        </h5>
-                        <p>
-                            High Fever – this means you feel hot to touch on your chest or back (you do not need to
-                            measure your temperature). It is a common sign and also may appear in 2-10 days if you
-                            affected.
-                        </p>
+            <div class=" symptomsDetials ">
+                <!-- col-lg-3 col-md-5 col-9 col-sm-9 -->
+                <div class="details ">
+                    <div class="symptomsDetialsImg">
+                        <img src="Images/symptom-a.png" alt="">
                     </div>
-                    <div class="details col-lg-4 col-md-5 col-9 col-sm-9">
-                        <div class="symptomsDetialsImg">
-                            <img src="Images/symptom-b.png" alt="">
-                        </div>
-                        <h5>
-                            Cough
-                        </h5>
-                        <p>
-                            Continuous cough – this means coughing a lot for more than an hour, or 3 or more coughing
-                            episodes in 24 hours (if you usually have a cough, it may be worse than usual).
-                        </p>
+                    <h5>Fever</h5>
+                    <p>
+                        High Fever – this means you feel hot to touch on your chest or back (you do not need to
+                        measure your temperature). It is a common sign and also may appear in 2-10 days if you
+                        affected.
+                    </p>
+                </div>
+                <div class="details ">
+                    <div class="symptomsDetialsImg">
+                        <img src="Images/symptom-b.png" alt="">
                     </div>
-                    <div class="details col-lg-4 col-md-5 col-9 col-sm-9">
-                        <div class="symptomsDetialsImg">
-                            <img src="Images/symptom-c.png" alt="">
-                        </div>
-                        <h5>
-                            Shortness of breath
-                        </h5>
-                        <p>
-                            Difficulty breathing – Around 1 out of every 6 people who gets COVID-19 becomes seriously
-                            ill and develops difficulty breathing or shortness of breath.
-                        </p>
+                    <h5>Cough
+                    </h5>
+                    <p>
+                        Continuous cough – this means coughing a lot for more than an hour, or 3 or more coughing
+                        episodes in 24 hours (if you usually have a cough, it may be worse than usual).
+                    </p>
+                </div>
+                <div class="details ">
+                    <div class="symptomsDetialsImg">
+                        <img src="Images/symptom-c.png" alt="">
                     </div>
+                    <h5>
+                        Shortness of breath
+                    </h5>
+                    <p>
+                        Difficulty breathing – Around 1 out of every 6 people who gets COVID-19 becomes seriously
+                        ill and develops difficulty breathing or shortness of breath.
+                    </p>
                 </div>
             </div>
-            <div>
-                <i class="ti-"></i>
-                <p>
-                    Stay at home and call your doctor: If you think you have been exposed to COVID-19 and develop a
-                    fever and any symptoms, such as cough or difficulty breathing, call your healthcare provider as soon
-                    as possible for medical advice.
-                </p>
-                <a>
-                    <i class="ti-help-alt"></i>Have question? Find answer.</a>
+            <div class="staySafe">
+                <div class="text">
+                    <i class="fas fa-exclamation-triangle danger-icon"></i>
+                    <p>
+                        Stay at home and call your doctor: If you think you have been exposed to COVID-19 and develop a
+                        fever and any symptoms, such as cough or difficulty breathing, call your healthcare provider as
+                        soon
+                        as possible for medical advice.
+                    </p>
+                </div>
+                <div>
+                    <a class="btnLink">
+                        <i class="ti-help-alt link_icon"></i>Have question? Find answer.</a>
+                </div>
             </div>
         </div>
     </section>
@@ -404,30 +412,32 @@
                     Follow steps to wash hands</h3>
                 <a>Why do I need wash hand </a>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <img src="Images/hand-a.png">
-                    <h6>Soap on Hand</h6>
-                </div>
-                <div class="col-2">
-                    <img src="Images/hand-b.png">
-                    <h6>Palm to Palm</h6>
-                </div>
-                <div class="col-2">
-                    <img src="Images/hand-c.png">
-                    <h6>Between Fingers</h6>
-                </div>
-                <div class="col-2">
-                    <img src="Images/hand-d.png">
-                    <h6>Back to Hands</h6>
-                </div>
-                <div class="col-2">
-                    <img src="Images/hand-e.png">
-                    <h6>Clean with Water</h6>
-                </div>
-                <div class="col-2">
-                    <img src="Images/hand-f.png">
-                    <h6>Focus on Wrist</h6>
+            <div class="detailsContent">
+                <div class="row details">
+                    <div class="col-2">
+                        <img src="Images/hand-a.png">
+                        <h6>Soap on Hand</h6>
+                    </div>
+                    <div class="col-2">
+                        <img src="Images/hand-b.png">
+                        <h6>Palm to Palm</h6>
+                    </div>
+                    <div class="col-2">
+                        <img src="Images/hand-c.png">
+                        <h6>Between Fingers</h6>
+                    </div>
+                    <div class="col-2">
+                        <img src="Images/hand-d.png">
+                        <h6>Back to Hands</h6>
+                    </div>
+                    <div class="col-2">
+                        <img src="Images/hand-e.png">
+                        <h6>Clean with Water</h6>
+                    </div>
+                    <div class="col-2">
+                        <img src="Images/hand-f.png">
+                        <h6>Focus on Wrist</h6>
+                    </div>
                 </div>
             </div>
         </div>

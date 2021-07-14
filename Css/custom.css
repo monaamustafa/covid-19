@@ -110,9 +110,11 @@ a.nav-link {
     color: #50658e;
     font-size: 14px;
 }
-.nav-item a.btnLink{
+
+.nav-item a.btnLink {
     padding: 10px 30px;
 }
+
 a.nav-link:hover {
     color: var(--blueColor);
 }
@@ -196,15 +198,17 @@ a.active {
     justify-content: space-between;
 
 }
-.HomeBanner .links a{
-     display: block;
-     align-self: center;
-     align-items: center;
-     width: 40%;
-     margin: 0 auto;
-     padding: 10px 20px;
-    
+
+.HomeBanner .links a {
+    display: block;
+    align-self: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 20px;
+
 }
+
 .links .link_icon {
     padding-left: 10px;
 }
@@ -237,11 +241,13 @@ a.active {
     .cronaCases .cases {
         margin: 0 auto;
         width: 60%;
-        
+
     }
+
     .HomeBanner .links {
         flex-wrap: wrap;
     }
+
     .home {
         flex-wrap: wrap;
     }
@@ -295,16 +301,21 @@ a.active {
 }
 
 /* **********************************About ********************************************************* */
-/* .aboutaboutContent{
-    background-color: var(--whiteColor);
-} */
+
 .about {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.aboutContent {
+    width: 60%;
 }
 
 .aboutdetails {
     border: 1px solid #e7e8ff;
     padding: 5px;
+    width: 35%;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 0px rgba(80, 101, 142, 0.08);
     background-color: white;
@@ -327,7 +338,16 @@ a.active {
 .aboutdetails .details a {
     color: var(--blueColor);
 }
+@media only screen and (max-width: 1200px) {
+.about .aboutContent{
+    width: 95%;
+    margin: 1% auto;
+}
+.aboutdetails {
+ width: 70%;
+ margin: 1% auto;
 
+}
 /* ******************************************spread********************************************************* */
 .spread {
     background-color: #F7F9FE;
@@ -345,11 +365,13 @@ a.active {
 
 .spreadDetials {
     justify-content: space-around;
-
+    display: flex;
 
 }
 
-.spreadDetials .details {}
+.spreadDetials .details {
+    width: 30%;
+}
 
 .spreadDetials .details img {
     width: 100%;
@@ -377,27 +399,41 @@ a.active {
 
 .spread .question {
     text-align: center;
-    /* margin: 7%; */
+    margin: 7%;
     font-size: 19px;
     font-weight: 400;
+}
+
+.spread .question .btnLink {
+    padding: 1% 3%;
 }
 
 .spread .question .link_icon {
     padding: 0 20px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .spreadDetials{
+        flex-wrap: wrap;
+    }
+    .spreadDetials .details {
+    width: 68%;
+    margin: 2% auto;
+    }
+}
 /* *********************************************symptoms********************************************************* */
 .symptoms {}
 
 .symptoms .symptomsContant {
     text-align: center;
-    padding: 100px 0;
+    /* padding: 100px 0; */
 }
 
 .symptoms .symptomsDetials {
     display: flex;
     justify-content: space-around;
-    /* margin: 20px 0 30px; */
+    margin-top: 10%;
+    margin-bottom: 7%;
 }
 
 
@@ -434,25 +470,29 @@ a.active {
 
     .symptoms .symptomsDetials .details {
         width: 50%;
-        /* margin: 30px 0; */
+        margin: 5% 0;
     }
 
     .symptomsDetialsImg {
-        top: -11%;
+        top: -15%;
     }
 }
 
 .staySafe {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
 .staySafe .text {
     width: 70%;
     display: flex;
+
 }
 
-.staySafe .text p {}
+.staySafe .help {
+    width: 25%;
+}
 
 .staySafe .danger-icon {
     font-size: 60px;
@@ -460,9 +500,28 @@ a.active {
     padding: 0 20px;
 }
 
-.staySafe a {
+.staySafe .btnLink {
+    padding: 3% 9%;
     align-self: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .staySafe {
+        flex-wrap: wrap;
+
+    }
+
+    .staySafe .text {
+        width: 95%;
+        margin: 2% auto;
+    }
+
+    .staySafe .help {
+        margin: 5% auto 0;
+
+        width: 50%;
+    }
 }
 
 /* *********************************************protect********************************************************* */
@@ -473,8 +532,17 @@ a.active {
     /* padding: 100px 0; */
 }
 
+.protectdetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
 .protectdetails .details {
     text-align: center;
+    width: 24%;
 }
 
 .protectdetails .details img {

@@ -1115,6 +1115,9 @@ ul.diff-style li {
 .doAndDontImage2 {
     display: none;
 }
+.doAndDontImage2 img{ 
+    width: 100%;
+}
 
 .doAndDontContantDetails p {
     font-size: 13px;
@@ -1175,7 +1178,7 @@ ul.diff-style li {
 
     .doAndDontImage2 {
         display: block;
-        width: 98%;
+        width: 95%;
     }
 }
 

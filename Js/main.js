@@ -47,6 +47,15 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('nav-bg');
     }
 })
+// scroll to top 
+iconScroll.addEventListener('click', function () {
+    // window.scrollTo(0, 0);
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+
+});
 // dynamic scroll
 let listItemI = document.querySelectorAll('nav ul.first-nav li');
 let listItemII = document.querySelectorAll('nav ul.diff-style li');

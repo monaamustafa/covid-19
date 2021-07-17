@@ -152,8 +152,44 @@ a.active {
     display: none;
     color: var(--whiteColor);
 }
+/* *****************************Second menu*************************************************** */
+.second-nav{
+    width: 100vw;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #233d5c71;
+}
+.menu-icon{
+    color: #465675;
+    display: none;
+}
+@media only screen and (max-width: 1200px) {
+    .menu-icon{
+        display: block;
+    }
+}
+.clase-menu{
+    position: absolute;
+    right: 22px;
+    top: 30px;
+    font-size: 25px;
+    color: #465675;
+    }
+.diff-style{
+display: block;
+position: absolute;
+top: 0;
+height: 100vh;
+background-color: #fff;
+}
+ul.diff-style li{
+    margin: 30% 0;
+}
 
-/* ****************************************************************************** */
+/* *****************************Home************************************************* */
 .home {
     display: flex;
 
@@ -171,6 +207,8 @@ a.active {
 /* heading */
 .heading {
     display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
     margin-top: 20px;
     align-items: center;
     justify-content: center;
@@ -186,7 +224,6 @@ a.active {
 .subHeading {
     font-size: 25px;
     font-weight: 700;
-
 }
 
 /* home image */
@@ -204,7 +241,6 @@ a.active {
     text-align: center;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-
 }
 
 .HomeBanner .links a {
@@ -268,7 +304,7 @@ a.active {
 
 /* **********************************General style between mainSection********************************************************* */
 .mainSection {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     background-size: cover;
     /* text-align: center; */
@@ -882,7 +918,17 @@ a.active {
     width: 65%;
     border: 1px solid #e7e8ff;
 }
+@media only screen and (max-width: 1200px) {
+    .CommenQuestion .CommenQuestionContent{
+        justify-content: space-around;
+    }
+    .CommenQuestion .CommenQuestionContent .question ,
+    .CommenQuestionContent .answers {
+        width: 70%;
 
+    }
+
+}
 .CommenQuestionContent .answers .answerDetails h6{
     font-size: 18px;
 }
@@ -1003,14 +1049,33 @@ margin-bottom: 1%;
 }
 .doAndDontContant {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.doAndDontContantDetails{
-    display:flex ;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 20%;
+    text-align: center;
+    align-items: center;
+}
+.mainDont,.mainDo{
+width: 20%;
+}
+.mainDont .img-box img,.mainDo .img-box img{
+    width:  100px;
+}
+
+.doAndDontImage{
+    width: 60%;
+}
+.doAndDontImage img{
+    width: 100%;
+}
+.doAndDontContantDetails{
+     display:flex ;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* width: 20%;  */
+}
+.doAndDontContantDetails h6{
+    font-size: 15px;
+    color: #465675;
 }
 .img-box{
     width: 10%;
@@ -1023,10 +1088,17 @@ border-radius: 50%;
 }
 .doAndDontContantDetails .photo-icon{
     position: relative;
-    bottom: 154px;
-    right: -7px;
-    font-size: 25px;
+    bottom: 99px;
+    right: -3px;
+    font-size: 19px;
     color: red;
+}
+.doAndDontContantDetails .photo-icon-right{
+    position: relative;
+    bottom: 99px;
+    right: -3px;
+    font-size: 19px;
+    color: green;
 }
 .doAndDontImage img {
     width: 70%;

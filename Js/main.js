@@ -1,3 +1,4 @@
+
 // dynamic padding top each section 
 // window.addEventListener('load', function () {
 //     let navbar = document.querySelector('header');
@@ -7,6 +8,21 @@
 //         content[k].style.paddingTop = navbar.clientHeight + "px";
 //     }
 // })
+// show and hide second menu
+
+let openIcon=document.querySelector('.menu-icon');
+let closeIcon=document.querySelector('.clase-menu');
+let secondNav=document.querySelector('.second-nav');
+openIcon.addEventListener('click',function(){
+secondNav.style.display='block'
+})
+closeIcon.addEventListener('click',function(){
+    secondNav.style.display='none';
+    })
+secondNav.addEventListener('click',function(){
+    secondNav.style.display='none';
+})    
+    
 //             Add Active Class  
 let link = document.querySelectorAll('ul li a');
 for (let i = 0; i < link.length; i++) {
@@ -21,8 +37,7 @@ for (let i = 0; i < link.length; i++) {
 let bodyScroll = document.querySelector('html, body');
 let iconScroll = document.querySelector('.scroll-top');
 let navbar = document.querySelector('nav');
-console.log(navbar);
-
+// console.log(navbar);
 window.addEventListener('scroll', function () {
     if (bodyScroll.scrollTop >= 40) {
         iconScroll.style.display = 'block';
@@ -33,7 +48,8 @@ window.addEventListener('scroll', function () {
     }
 })
 // dynamic scroll
-let listItemII = document.querySelectorAll('nav ul li');
+let listItemI = document.querySelectorAll('nav ul.first-nav li');
+let listItemII = document.querySelectorAll('nav ul.diff-style li');
 let sectionItems = document.querySelectorAll('.navbarItem');
 console.log(listItemII.length + "" + sectionItems.length)
 for (let i = 0; i < listItemII.length; i++) {
@@ -43,6 +59,13 @@ for (let i = 0; i < listItemII.length; i++) {
             // block: 'center'
         });
     });
+    listItemI[i].addEventListener('click', () => {
+        sectionItems[i].scrollIntoView({
+            behavior: 'smooth',
+            // block: 'center'
+        });
+    });
+
 }
 // show more details
 // commen question section

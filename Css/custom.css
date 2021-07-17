@@ -889,6 +889,7 @@ ul.diff-style li {
     .treatmentText,
     .treatmentDetails {
         width: 80%;
+        margin-top: 5%;
     }
 }
 
@@ -934,7 +935,7 @@ ul.diff-style li {
 
     .CommenQuestion .CommenQuestionContent .question,
     .CommenQuestionContent .answers {
-        width: 70%;
+        width: 90%;
 
     }
 
@@ -1030,7 +1031,6 @@ ul.diff-style li {
  
 }*/
 
-
 /*************************************** Blogs ************************************************/
 .blog {
     background-color: #f7f9fe;
@@ -1068,6 +1068,7 @@ ul.diff-style li {
 
     .blog .blogContant .blogDetails {
         width: 68%;
+        margin-top: 7%;
     }
     .blog .blogContant {
     justify-content: space-around;
@@ -1108,7 +1109,7 @@ ul.diff-style li {
 .doAndDontContantDetails {
     display: flex;
     /* flex-direction: column; */
-    justify-content: space-between;
+    justify-content: space-around;
     /* width: 20%;  */
 }
 
@@ -1161,14 +1162,14 @@ ul.diff-style li {
 .doAndDontContantDetails {
     width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 @media only screen and (max-width: 1200px) {
 
     .mainDont,
     .mainDo {
-        width: 40%;
+        width: 45%;
     }
 
     .doAndDontImage {

@@ -12,13 +12,16 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--bs-font-sans-serif);
 }
-
+span{
+    font-weight: bold;
+}
 a {
     text-decoration: none;
 }
@@ -65,6 +68,10 @@ a.btnLink:hover {
     background-color: #3171c0;
 }
 
+a.diffLink {
+    color: #2a81ea;
+}
+
 .diffcolor {
     color: var(--pinkColor);
 }
@@ -76,7 +83,8 @@ p {
 
 /* ****************************header************************************************ */
 .nav-nav {
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
 }
@@ -171,7 +179,7 @@ a.active {
 }
 
 .heading h1 {
-    font-size: 40px;
+    font-size: 85px;
     font-weight: 900;
 }
 
@@ -263,6 +271,7 @@ a.active {
     min-height: 100vh;
     width: 100%;
     background-size: cover;
+    /* text-align: center; */
     padding: 100px 0;
 }
 
@@ -270,19 +279,20 @@ a.active {
     color: var(--blueColor);
     letter-spacing: 2px;
     font-weight: 700;
+    text-align: center;
     font-size: 20px;
-
 }
 
 .mainSection h2 {
     color: var(--mainColor);
     /* font-weight: 900; */
     font-size: 50px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20px 0;
-    font-family: var(--fontbold);
 
+    text-align: center;
+    font-family: var(--fontbold);
 }
 
 .mainSection .mainP span {
@@ -297,7 +307,15 @@ a.active {
 }
 
 .mainSection .centerP {
-    padding: 0 20%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* padding: 0 20%; */
+    line-height: 1.5em;
+    color: #3d4b69;
+    margin-bottom: 60px;
 }
 
 /* **********************************About ********************************************************* */
@@ -338,16 +356,19 @@ a.active {
 .aboutdetails .details a {
     color: var(--blueColor);
 }
-@media only screen and (max-width: 1200px) {
-.about .aboutContent{
-    width: 95%;
-    margin: 1% auto;
-}
-.aboutdetails {
- width: 70%;
- margin: 1% auto;
 
+@media only screen and (max-width: 1200px) {
+    .about .aboutContent {
+        width: 95%;
+        margin: 1% auto;
+    }
+
+    .aboutdetails {
+        width: 70%;
+        margin: 1% auto;
+    }
 }
+
 /* ******************************************spread********************************************************* */
 .spread {
     background-color: #F7F9FE;
@@ -413,14 +434,16 @@ a.active {
 }
 
 @media only screen and (max-width: 1200px) {
-    .spreadDetials{
+    .spreadDetials {
         flex-wrap: wrap;
     }
+
     .spreadDetials .details {
-    width: 68%;
-    margin: 2% auto;
+        width: 85%;
+        margin: 2% auto;
     }
 }
+
 /* *********************************************symptoms********************************************************* */
 .symptoms {}
 
@@ -464,6 +487,19 @@ a.active {
 }
 
 @media only screen and (max-width: 1200px) {
+    .symptoms .symptomsDetials {
+        flex-wrap: wrap;
+    }
+
+    .symptoms .symptomsDetials .details {
+        width: 35%;
+        /* margin: 5% 0; */
+        margin-bottom: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
     .symptoms .symptomsDetials {
         flex-wrap: wrap;
     }
@@ -525,7 +561,9 @@ a.active {
 }
 
 /* *********************************************protect********************************************************* */
-.protect {}
+.protect {
+    background-color: #f7f9fe;
+}
 
 .protectContant {
     text-align: center;
@@ -536,8 +574,6 @@ a.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
 }
 
 .protectdetails .details {
@@ -545,55 +581,505 @@ a.active {
     width: 24%;
 }
 
-.protectdetails .details img {
-    border-radius: 50%;
-    width: 150px;
+.protectdetails .details h6 {
+    color: #3d4b69;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
+.protectdetails .details .p {
+    color: #3d4b69;
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .protectdetails .details {
+        text-align: center;
+        width: 40%;
+        margin-bottom: 10%;
+    }
+}
+
+.protectdetails .details img {
+    border-radius: 50%;
+    width: 170px;
+}
+
+/* ************** links ***************** */
 .protect .links {
+    margin-top: 10%;
     display: flex;
+    text-align: center;
+    font-weight: 500;
     justify-content: space-around;
 }
 
-.protectOthersContent p {
+.protect .links a {
+    padding: 10px 4%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .protect .links {
+
+        flex-direction: column;
+    }
+
+    .protect .links a {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+/**************  others ******************/
+.protectOthers {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);
+}
+
+.protectOthersDetails {
+    width: 56%;
+    padding: 2%;
+}
+
+.protectOthersDetails .details {
+    margin-bottom: 10px;
+}
+
+.protectOthersDetails h3 {
+    margin-top: 40px;
+    /* margin-left: 40px; */
+    color: #465675;
+    font-size: 30px;
+}
+
+.protectOthersDetails p {
     /* width: 70%; */
     display: inline;
+}
+
+.protectOthersDetails .check-icon {
+    margin-right: 10px;
+    color: #3dca93;
+}
+
+.protectOthersDetails p {
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+.protectOthersDetails p span {
+    font-weight: bold;
+}
+
+.protectOthersImage {
+    width: 40%;
 }
 
 .protectOthersImage img {
     width: 100%;
 }
 
-/*************************************** do And Dont ************************************************/
+@media only screen and (max-width: 1200px) {
+    .protectOthers {
+        justify-content: space-around;
+    }
+
+    .protectOthersDetails {
+
+        width: 90%;
+    }
+
+    .protectOthersImage {
+        width: 70%;
+    }
+}
+
+/* ********* Steps *************** */
+.steps {
+    padding-top: 100px;
+}
+
+.steps .steps-text {
+    text-align: center;
+}
+
+.steps .steps-text h3 {
+    margin-top: 40px;
+    margin-left: 40px;
+    color: #465675;
+    font-size: 30px;
+}
+
+.steps .steps-text .link {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.steps .steps-text .arrow-icon {
+    margin-left: 12px;
+}
+
+.StepsDetails {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.StepsDetails .details {
+    width: 13%;
+}
+
+.StepsDetails .details h6 {
+    margin-top: 10px;
+    color: #3d4b69;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .StepsDetails .details {
+        width: 30%;
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .StepsDetails .details {
+        width: 40%;
+    }
+}
+
+.StepsDetails .details img {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+/*************************************** treatment ************************************************/
+.treatment {
+    background-image: url(../Images/shape-a.png);
+    background-color: #27548b;
+    mix-blend-mode: darken;
+    color: #fff;
+}
+
+.treatmentContent {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.treatmentText {
+    padding: 2%;
+    width: 57%;
+}
+
+.treatment h2,
+.treatment p {
+    color: #fff;
+}
+
+.treatment .treatmentText p {
+    line-height: 1.5em;
+    font-size: 17px;
+
+}
+
+.treatment .treatmentText p span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.treatmentDetails {
+    background-color: #1b47a1;
+    padding: 5% 2%;
+    width: 35%;
+}
+
+.treatmentDetails h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.treatmentDetails p {
+    font-size: 19px;
+
+    line-height: 1.5em;
+
+}
+
+.treatmentDetails ul {
+    display: block;
+}
+
+.treatmentDetails ul li {
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.treatmentDetails ul li .arrow-icon {
+    margin-right: 2%;
+    margin-left: -1%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .treatmentContent {
+        justify-content: space-around;
+    }
+
+    .treatmentText,
+    .treatmentDetails {
+        width: 80%;
+    }
+}
+
+/*************************************** CommenQuestion ************************************************/
+.CommenQuestion {}
+
+.CommenQuestion .CommenQuestionContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.CommenQuestion .CommenQuestionContent .question {
+    /* display: block; */
+    width: 30%;
+}
+
+.CommenQuestion .CommenQuestionContent .question .details {
+    display: flex;
+    justify-content: space-between;
+    color: #50658e;
+    border: 2px solid #e7e8ff;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.CommenQuestion .CommenQuestionContent .question .details:hover {
+    color: #2a81ea;
+    border-color: #2a81ea;
+}
+
+.CommenQuestionContent .answers {
+    width: 65%;
+    border: 1px solid #e7e8ff;
+}
+
+.CommenQuestionContent .answers .answerDetails h6{
+    font-size: 18px;
+}
+
+.CommenQuestionContent .answers .details {
+    border-bottom: 1px solid #e7e8ff;
+
+}
+
+.CommenQuestionContent .answers .main-question {
+    color: #465675;
+    font-weight: bold;
+    display: flex;
+    font-size: 25px;
+    /* margin-bottom: 3%; */
+    /* line-height: ; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    cursor: pointer;
+}
+
+.CommenQuestionContent .answers p {
+    padding: 1% 3%;
+}
+
+.main-question-answer p span{
+    font-weight: bold;
+}
+.main-question-answer ul {
+    color: #465675;
+    display: block ;
+    /* list-style-type: circle; */
+}
+.main-question-answer ul li{
+    margin-bottom: 2%;
+    margin-left: 5%;
+    list-style-type: square;
+
+}
+.main-question-answer ul li span{
+    margin-right: 2%;
+    /* margin-bottom: 2%; */
+}
+.CommenQuestionContent .answers .main-question:hover {
+    color: #2a81ea;
+}
+
+.minimized {
+    background-color: #f7fafe;
+}
+
+.active {
+    color: #2a81ea !important;
+}
+
+.CommenQuestionContent .answers .main-question .show-icon,
+.CommenQuestionContent .answers .main-question .hide-icon {
+    font-size: 15px;
+    font-weight: normal;
+}
+.header-active{
+display: none;
+}
+.hide-icon{
+    display: none;
+}
+ .show-answer{
+display: block;
+}
+
+.hide-answer{
+    display: none;
+}
+
+/* .showless-icon{
+    display: none;
+}
+.showmore-icon{
+    display: block;
+ 
+}*/ 
+
+
+/*************************************** Blogs ************************************************/
+.blog{
+    background-color: #f7f9fe;
+}
+.blog .blogContant{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blog .blogContant .blogDetails{
+    background-color: #fff;
+    text-align: center;
+    color: #465675;
+    padding: 3%;
+    width: 25%;
+}
+
+.blogContant .blogDetails img {
+text-align: center;
+    width: 100%;
+}
+.blogContant .blogDetails h6{
+font-weight: 700;
+font-size: 20px;
+margin-bottom: 1%;
+}
+.blogContant .blogDetails p{
+
+}
+/*************************************** CommenQuestion ************************************************/
+.doAndDont{
+    background-color:#f7f9fe ;
+}
 .doAndDontContant {
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
+.doAndDontContantDetails{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 20%;
+}
+.img-box{
+    width: 10%;
+}
+.doAndDontContantDetails img{
+/* width: 100%; */
+background-color: #fff;
+/* position: absolute; */
+border-radius: 50%;
+}
+.doAndDontContantDetails .photo-icon{
+    position: relative;
+    bottom: 154px;
+    right: -7px;
+    font-size: 25px;
+    color: red;
+}
 .doAndDontImage img {
-    width: 100%;
+    width: 70%;
     /* height: 100%; */
 }
 
 .doAndDontContantDetails {
+    width: 40%;
     display: flex;
+    justify-content: space-between;
 }
 
-.blogContant img {
-    width: 80%;
-}
-
-/* *************************************Steps********************************************************* */
-.detailsContent .details img {
-    width: 100%;
-
-}
 
 /*************************************** footer ************************************************/
 footer {
-
     background-image: url(../Images/shape-a.png);
-    background-color: blue;
+    background-color: rgb(8, 9, 31);
     mix-blend-mode: darken;
-    padding: 0;
+    padding: 15% 0 2%;
+    color: #fff;
+}
+footer .logo{
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+footer p{
+    color: #b2bfe0 !important;
+}
+.footerParts{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.footerParts ul{
+    display: block;
+    /* padding: 0; */
+color: #b2bfe0;;
+}
+.footerParts .mainfooter{
+    width: 35%;
+}
+.footerParts .details{
+    text-align: justify;
+    width: 20%;
+}
+.footer{
+    margin-top: 15%;
+    border-top: 1px solid #b2bfe0;
+}
+.footer .copyrights{
+    display: flex;
+    justify-content: space-between;
+    margin-top:3% ;
+    margin-bottom: 5%;
 }

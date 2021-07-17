@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
-    <link href="Css/bootstrap-grid.css " rel="stylesheet">
+    <!-- <link href="Css/bootstrap-grid.css " rel="stylesheet"> -->
     <link href="Css/custom.css" rel="stylesheet">
     <!-- icons -->
     <link href="css/all.min.css" rel="stylesheet">
@@ -296,23 +296,12 @@
     <!-- ********************************************************************************************
                                     PROTECT
         ************************************************************************************************* -->
-    <section id="Protect" class="mainSection navbarItem">
-        <div class="protect container">
-            <div class="protectContant">
-                <h4>
-                    HOW TO PROTECT YOURSELF?
-                </h4>
-                <h2>PREVENTION & ADVICE
-                </h2>
-                <p>
-                    There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19). The best way to
-                    prevent illness is to avoid being exposed to this virus. Stay aware of the latest information on the
-                    COVID-19 outbreak, available on the WHO website and through your national and local public health
-                    authority.
-                </p>
-            </div>
-            <div class="row protectdetails">
-                <div class="details col-lg-3">
+    <section id="Protect" class="mainSection protect navbarItem">
+        <div class="container">
+
+            <!-- ****************** protectdetails************************************************** -->
+            <div class="protectdetails">
+                <div class="details ">
                     <img src="Images/advice-a.png">
                     <h6>Wash your hands frequently</h6>
                     <p>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap
@@ -341,55 +330,66 @@
                     </p>
                 </div>
             </div>
+
+            <!-- ****************** links************************************************** -->
             <div class="links">
-                <a>
+                <a class="btnLink">
                     Check how you wash hand
                 </a>
-                <a>Q&A on Coronaviruses </a>
+                <a class="diffLink">Q&A on Coronaviruses </a>
             </div>
-            <div class="row protectOthers">
-                <div class="col-lg-8 protectOthersContent">
+
+            <!-- ****************** protectOthers************************************************** -->
+            <div class="protectOthers">
+                <div class="protectOthersDetails">
                     <h3>Take steps to protect others</h3>
-                    <div>
-                        <i class="far fa-check-circle"></i>
+                    <div class="details">
+                        <i class="far check-icon fa-check-circle"></i>
                         <p>
-                            Stay home if you’re sick – Stay home if you are sick, except to get medical care.</p>
+                            <span>Stay home if you’re sick</span> – Stay home if you are sick, except to get medical
+                            care.</p>
                     </div>
-                    <div>
-                        <i class="far fa-check-circle"></i>
-                        <p>Cover your mouth and nose – with a tissue when you cough or sneeze (throw used tissues in
+                    <div class="details">
+                        <i class="far check-icon fa-check-circle"></i>
+                        <p><span>Cover your mouth and nose </span>– with a tissue when you cough or sneeze (throw used
+                            tissues in
                             the
                             trash) or use the inside of your elbow.
                         </p>
                     </div>
-                    <div>
-                        <i class="far fa-check-circle"></i>
-                        <p>Wear a facemask if you are sick – You should wear a facemask when you are around other
+                    <div class="details">
+                        <i class="far check-icon fa-check-circle"></i>
+                        <p><span>Wear a facemask if you are sick</span> – You should wear a facemask when you are around
+                            other
                             people
                             (e.g., sharing a room or vehicle) and before you enter a healthcare provider’s
                         </p>
                     </div>
-                    <div>
-                        <i class="far fa-check-circle"></i>
-                        <p>Clean AND disinfect frequently touched surfaces daily – This includes phones, tables,
+                    <div class="details">
+                        <i class="far check-icon fa-check-circle"></i>
+                        <p><span>Clean AND disinfect frequently touched surfaces daily </span>– This includes phones,
+                            tables,
                             light
                             switches, doorknobs, countertops, handles, desks, toilets, faucets, and sinks.
                         </p>
                     </div>
-                    <div>
-                        <i class="far fa-check-circle"></i>
-                        <p>Clean the dirty surfaces – Use detergent or soap and water prior to disinfection.
+                    <div class="details">
+                        <i class="far check-icon fa-check-circle"></i>
+                        <p><span>Clean the dirty surfaces</span> – Use detergent or soap and water prior to
+                            disinfection.
                         </p>
                     </div>
-                    <div>
-                        <i class="far fa-check-circle"></i>
-                        <p>Stay informed about the local COVID-19 situation – Get up-to-date information about local
+                    <div class="details">
+                        <i class="far check-icon fa-check-circle"></i>
+                        <p><span>Stay informed about the local COVID-19 situation </span>– Get up-to-date information
+                            about local
                             COVID-19 activity from public health officials.
                         </p>
                     </div>
-                    <div>
-                        <i class="far fa-check-circle"></i>
-                        <p>Dedicated, lined trash can – If possible, dedicate a lined trash can for the ill person.
+                    <div class="details">
+                        <i class="far check-icon fa-check-circle"></i>
+                        <p><span>Dedicated, lined trash can</span> – If possible, dedicate a lined trash can for the ill
+                            person.
                             Use
                             gloves when removing garbage bags, and handling & disposing of trash.
                         </p>
@@ -399,41 +399,36 @@
                     <img src="Images/steps.png">
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- ********************************************************************************************
-                                    steps
-        ************************************************************************************************* -->
-    <section id="steps" class=" mainSection steps">
-        <div class="stepsContent container ">
-            <div>
-                <h3>
-                    Follow steps to wash hands</h3>
-                <a>Why do I need wash hand </a>
-            </div>
-            <div class="detailsContent">
-                <div class="row details">
-                    <div class="col-2">
+            <!-- ****************** steps************************************************** -->
+            <div class="stepsContent  steps ">
+                <div class="steps-text">
+                    <h3>Follow steps to wash hands</h3>
+                    <div class="link">
+                        <a class="diffLink">Why do I need wash hand <i class="fas arrow-icon fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="StepsDetails ">
+                    <div class=" details ">
                         <img src="Images/hand-a.png">
                         <h6>Soap on Hand</h6>
                     </div>
-                    <div class="col-2">
+                    <div class="details">
                         <img src="Images/hand-b.png">
                         <h6>Palm to Palm</h6>
                     </div>
-                    <div class="col-2">
+                    <div class="details">
                         <img src="Images/hand-c.png">
                         <h6>Between Fingers</h6>
                     </div>
-                    <div class="col-2">
+                    <div class="details">
                         <img src="Images/hand-d.png">
                         <h6>Back to Hands</h6>
                     </div>
-                    <div class="col-2">
+                    <div class="details">
                         <img src="Images/hand-e.png">
                         <h6>Clean with Water</h6>
                     </div>
-                    <div class="col-2">
+                    <div class="details">
                         <img src="Images/hand-f.png">
                         <h6>Focus on Wrist</h6>
                     </div>
@@ -442,158 +437,756 @@
         </div>
     </section>
     <!-- ********************************************************************************************
-                                    steps
+                                    TREATMENT
         ************************************************************************************************* -->
-    <section class="mainSection navbarItem">
-        <div>
-            <div>
-                <h4>
-                    BE CAREFULL & STAY SAFE
-                </h4>
-                <h2>
-                    TREATMENT FOR CORONAVIRUS
-                </h2>
-                <p>
-                    To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019.
-                    However, those affected should receive care to relieve symptoms. People with serious illness should
-                    be hospitalized. Most patients recover thanks to supportive care.
-                </p>
-                <p>Antibiotics do not help, as they do not work against viruses. Treatment aims to relieve the symptoms
-                    while your body fights the illness. You'll need to stay in isolation, away from other people, until
-                    you have recovered.
-                </p>
-            </div>
-            <div>
-                <h6>self Care</h6>
-                <p> If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms if
-                    you:
-                </p>
-                <div>
+    <section id="treatment" class="mainSection treatment navbarItem">
+        <div class="container">
+            <div class="treatmentContent">
+                <div class="treatmentText">
+                    <h4>
+                        BE CAREFULL & STAY SAFE
+                    </h4>
+                    <h2>
+                        TREATMENT FOR CORONAVIRUS
+                    </h2>
+                    <p>
+                        <span>To date, there is no vaccine and no specific antiviral medicine to prevent or treat
+                            COVID-2019.</span>
+                        However, those affected should receive care to relieve symptoms. People with serious illness
+                        should
+                        be hospitalized. Most patients recover thanks to supportive care.
+                    </p>
+                    <p>Antibiotics do not help, as they do not work against viruses. Treatment aims to relieve the
+                        symptoms
+                        while your body fights the illness. You'll need to stay in isolation, away from other people,
+                        until
+                        you have recovered.
+                    </p>
+                </div>
+                <div class="treatmentDetails">
                     <div>
-                        <i></i>
-                        <p>Rest and sleep</p>
-                    </div>
-                    <div>
-                        <i></i>
-                        <p>Keep warm</p>
-                    </div>
-                    <div>
-                        <i></i>
-                        <p>
-                            Drink plenty of liquids</p>
-                    </div>
-                    <div>
-                        <i></i>
-                        <p>
-                            Use a room humidifier or take a hot shower to help ease a sore throat and cough
-                            Medical Treatments
+                        <h4>self Care</h4>
+                        <p> If you have mild symptoms, stay at home until you’ve recovered. You can relieve your
+                            symptoms if
+                            you:
                         </p>
                     </div>
+                    <ul>
+                        <li>
+                            <i class="fas arrow-icon fa-arrow-right"></i>Rest and sleep
+                        </li>
+                        <li>
+                            <i class="fas arrow-icon fa-arrow-right"></i>Keep warm
+                        </li>
+                        <li>
+                            <i class="fas arrow-icon fa-arrow-right"></i> Drink plenty of liquids
+                        </li>
+                        <li>
+                            <i class="fas arrow-icon fa-arrow-right"></i>
+                            Use a room humidifier or take a hot shower to help ease a sore throat and cough
+                            Medical Treatments
+                        </li>
+                    </ul>
+                    <div>
+                        <h4>Medical Treatments</h4>
+                        <p>
+                            If you develop a fever, cough, and have difficulty breathing, promptly seek medical care.
+                            Call
+                            in
+                            advance and tell your health provider of any recent travel or recent contact with travelers.
+                        </p>
+                    </div>
+
                 </div>
-                <p>
-                    If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in
-                    advance and tell your health provider of any recent travel or recent contact with travelers.
-                </p>
             </div>
         </div>
     </section>
-    <!-- ********************************************************************************************
-                                    steps
-        ************************************************************************************************* -->
 
     <!-- ********************************************************************************************
-                                    steps
+                                    COMMON QUESTION
         ************************************************************************************************* -->
-    <section class="mainSection navbarItem">
-        <div>
+    <section id="CommenQuestion" class="mainSection navbarItem CommenQuestion">
+        <div class="container">
             <h4>FREQUENTLY ASKED QUESTIONS</h4>
             <h2>COMMON QUESTION & ANSWER</h2>
-            <div>
-                <div>
-                    <div>
-                        <h6>Coronavirus Disease 2019 Basics</h6>
-                        <i class="fas fa-sort-up"></i>
+            <div class="CommenQuestionContent">
+                <div class="question">
+                    <div class="details">
+                        <p>Coronavirus Disease 2019 Basics</p>
+                        <i class="fas fa-caret-right"></i>
                     </div>
-                    <div>How It Spreads</h6>
-                        <i class="fas fa-sort-up"></i>
+                    <div class="details">
+                        <p> How It Spreads</p>
+                        <i class="fas fa-caret-right"></i>
                     </div>
-                    <div>
-                        <h6>How to Protect Yourself</h6>
-                        <i class="fas fa-sort-up"></i>
+                    <div class="details">
+                        <p>How to Protect Yourself</p>
+                        <i class="fas fa-caret-right"></i>
                     </div>
-                    <div>
-                        <h6>Symptoms & Testing
-                        </h6>
-                        <i class="fas fa-sort-up"></i>
+                    <div class="details">
+                        <p>Symptoms & Testing</p>
+                        <i class="fas fa-caret-right"></i>
                     </div>
-                    <div>
-                        <h6>Outbreak in Your Community</h6>
-                        <i class="fas fa-sort-up"></i>
+                    <div class="details">
+                        <p> Outbreak in Your Community</p>
+                        <i class="fas fa-caret-right"></i>
                     </div>
-                    <div>
-                        <h6>Myth-Busters of coronavirus</h6>
-                        <i class="fas fa-sort-up"></i>
-                    </div>
-                </div>
-                <div class="details one">
-                    <div>
-                        <h6>What is a novel coronavirus?</h6>
-                        <i class="fas fa-plus"></i>
-                        <div class="showMore">
-                            <p> On February 11, 2020 the World Health Organization announced an official name for the
-                                disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan
-                                China. The new name of this disease is coronavirus disease 2019, abbreviated as
-                                COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease.
-                                Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
-                            </p>
-                            <p>
-                                A novel coronavirus is a new coronavirus that has not been previously identified. The
-                                virus causing coronavirus disease 2019 (COVID-19), is not the same as the coronaviruses
-                                that commonly circulate among humans and cause mild illness, like the common cold.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <h6>Why is the disease being called coronavirus disease 2019, COVID-19?</h6>
-                        <i class="fas fa-plus"></i>
-                        <div class="showMore">On February 11, 2020 the World Health Organization announced an official
-                            name for the disease that is causing the 2019 novel coronavirus outbreak, first identified
-                            in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as
-                            COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease.
-                            Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
-
-                            There are many types of human coronaviruses including some that commonly cause mild
-                            upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or new)
-                            coronavirus that has not previously been seen in humans. The name of this disease was
-                            selected following the World Health Organization (WHO) best practiceexternal icon for naming
-                            of new human infectious diseases.</div>
-                    </div>
-                    <div>
-                        <h6>How can people help stop stigma related to COVID-19?</h6>
-                        <i class="fas fa-plus"></i>
-                        <div class="showMore">
-                            People can fight stigma and help, not hurt, others by providing social support. Counter
-                            stigma by learning and sharing facts. Communicating the facts that viruses do not target
-                            specific racial or ethnic groups and how COVID-19 actually spreads can help stop stigma.
-                        </div>
-                    </div>
-                    <div>
-                        <h6>Why might someone blame or avoid individuals and groups?</h6>
-                        <i class="fas fa-plus"></i>
-                        <div class="showMore">People in the U.S. may be worried or anxious about friends and relatives
-                            who are living in or visiting areas where COVID-19 is spreading. Some people are worried
-                            about the disease. Fear and anxiety can lead to social stigma, for example, towards Chinese
-                            or other Asian Americans or people who were in quarantine.
-
-                            Stigma is discrimination against an identifiable group of people, a place, or a nation.
-                            Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to blame
-                            someone, fears about disease and death, and gossip that spreads rumors and myths.
-
-                            Stigma hurts everyone by creating more fe</div>
+                    <div class="details">
+                        <p> Myth-Busters of coronavirus</p>
+                        <i class="fas fa-caret-right"></i>
                     </div>
                 </div>
-                <div class="details two">
+                <div class="answers ">
+                    <div class=" answerDetails one">
+                        <div class="details">
+                            <div class="main-question active">
+                                <h6>What is a novel coronavirus?</h6>
+                                <!-- <i class="fas fa-plus  show-icon"></i> -->
+                                <i class="fas  show-icon  fa-minus"></i>
+                            </div>
+                            <div class="main-question-answer">
+                                <p> On February 11, 2020 the World Health Organization announced an official name for
+                                    the
+                                    disease that is causing the 2019 novel coronavirus outbreak, first identified in
+                                    Wuhan
+                                    China. The new name of this disease is coronavirus disease 2019, abbreviated as
+                                    COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for
+                                    disease.
+                                    Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+                                </p>
+                                <p>
+                                    A novel coronavirus is a new coronavirus that has not been previously identified.
+                                    The
+                                    virus causing coronavirus disease 2019 (COVID-19), is not the same as the
+                                    coronaviruses
+                                    that commonly circulate among humans and cause mild illness, like the common cold.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized ">
+                                <h6>Why is the disease being called coronavirus disease 2019, COVID-19?</h6>
+                                <i class="fas show-icon  fa-plus"></i>
+                                <i class="fas hide-icon  fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>On February 11, 2020 the World Health Organization announced an
+                                    official
+                                    name for the disease that is causing the 2019 novel coronavirus outbreak, first
+                                    identified
+                                    in Wuhan China. The new name of this disease is coronavirus disease 2019,
+                                    abbreviated as
+                                    COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for
+                                    disease.
+                                    Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+                                </p>
+                                <p>
+                                    There are many types of human coronaviruses including some that commonly cause mild
+                                    upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or
+                                    new)
+                                    coronavirus that has not previously been seen in humans. The name of this disease
+                                    was
+                                    selected following the World Health Organization (WHO) best practiceexternal icon
+                                    for
+                                    naming
+                                    of new human infectious diseases.</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>How can people help stop stigma related to COVID-19?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon showless-icon fa-minus"></i>
 
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People can fight stigma and help, not hurt, others by providing social support.
+                                    Counter
+                                    stigma by learning and sharing facts. Communicating the facts that viruses do not
+                                    target
+                                    specific racial or ethnic groups and how COVID-19 actually spreads can help stop
+                                    stigma.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>Why might someone blame or avoid individuals and groups?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon fa-minus"></i>
+
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People in the U.S. may be worried or anxious about friends and
+                                    relatives
+                                    who are living in or visiting areas where COVID-19 is spreading. Some people are
+                                    worried
+                                    about the disease. Fear and anxiety can lead to social stigma, for example, towards
+                                    Chinese
+                                    or other Asian Americans or people who were in quarantine.</p>
+                                <p>
+                                    Stigma is discrimination against an identifiable group of people, a place, or a
+                                    nation.
+                                    Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to
+                                    blame
+                                    someone, fears about disease and death, and gossip that spreads rumors and myths.
+                                </p>
+                                <p>
+                                    Stigma hurts everyone by creating more fear or anger towards ordinary people instead
+                                    of the disease that is causing the problem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="answers header-active">
+                    <div class=" answerDetails one">
+                        <div class="details">
+                            <div class="main-question active">
+                                <h6>What is the source of the virus?</h6>
+                                <!-- <i class="fas fa-plus  show-icon"></i> -->
+                                <i class="fas show-icon fa-minus"></i>
+                            </div>
+                            <div class="main-question-answer">
+                                <p> Coronaviruses are a large family of viruses. Some cause illness in people, and
+                                    others, such as canine and feline coronaviruses, only infect animals. Rarely, animal
+                                    coronaviruses that infect animals have emerged to infect people and can spread
+                                    between people. This is suspected to have occurred for the virus that causes
+                                    COVID-19. Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory
+                                    Syndrome (SARS) are two other examples of coronaviruses that originated from animals
+                                    and then spread to people. More information about the source and spread of COVID-19
+                                    is available on the Situation Summary: Source and Spread of the Virus.</p>
+                                <p>
+                                    A novel coronavirus is a new coronavirus that has not been previously identified.
+                                    The
+                                    virus causing coronavirus disease 2019 (COVID-19), is not the same as the
+                                    coronaviruses
+                                    that commonly circulate among humans and cause mild illness, like the common cold.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized ">
+                                <h6>Why is the disease being called coronavirus disease 2019, COVID-19?</h6>
+                                <i class="fas show-icon  fa-plus"></i>
+                                <i class="fas hide-icon  fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>On February 11, 2020 the World Health Organization announced an
+                                    official
+                                    name for the disease that is causing the 2019 novel coronavirus outbreak, first
+                                    identified
+                                    in Wuhan China. The new name of this disease is coronavirus disease 2019,
+                                    abbreviated as
+                                    COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for
+                                    disease.
+                                    Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+                                </p>
+                                <p>
+                                    There are many types of human coronaviruses including some that commonly cause mild
+                                    upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or
+                                    new)
+                                    coronavirus that has not previously been seen in humans. The name of this disease
+                                    was
+                                    selected following the World Health Organization (WHO) best practiceexternal icon
+                                    for
+                                    naming
+                                    of new human infectious diseases.</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>How can people help stop stigma related to COVID-19?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon showless-icon fa-minus"></i>
+
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People can fight stigma and help, not hurt, others by providing social support.
+                                    Counter
+                                    stigma by learning and sharing facts. Communicating the facts that viruses do not
+                                    target
+                                    specific racial or ethnic groups and how COVID-19 actually spreads can help stop
+                                    stigma.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>Why might someone blame or avoid individuals and groups?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon fa-minus"></i>
+
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People in the U.S. may be worried or anxious about friends and
+                                    relatives
+                                    who are living in or visiting areas where COVID-19 is spreading. Some people are
+                                    worried
+                                    about the disease. Fear and anxiety can lead to social stigma, for example, towards
+                                    Chinese
+                                    or other Asian Americans or people who were in quarantine.</p>
+                                <p>
+                                    Stigma is discrimination against an identifiable group of people, a place, or a
+                                    nation.
+                                    Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to
+                                    blame
+                                    someone, fears about disease and death, and gossip that spreads rumors and myths.
+                                </p>
+                                <p>
+                                    Stigma hurts everyone by creating more fear or anger towards ordinary people instead
+                                    of the disease that is causing the problem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="answers header-active">
+                    <div class=" answerDetails one">
+                        <div class="details">
+                            <div class="main-question active">
+                                <h6>What can I do to protect myself and prevent the spread of disease?</h6>
+                                <!-- <i class="fas fa-plus  show-icon"></i> -->
+                                <i class="fas show-icon fa-minus"></i>
+                            </div>
+                            <div class="main-question-answer">
+                                <p><span>Protection measures for everyone</span>
+                                    Stay aware of the latest information on the COVID-19 outbreak, available on the WHO
+                                    website and through your national and local public health authority. Many countries
+                                    around the world have seen cases of COVID-19 and several have seen outbreaks.
+                                    Authorities in China and some other countries have succeeded in slowing or stopping
+                                    their outbreaks. However, the situation is unpredictable so check regularly for the
+                                    latest news.
+                                </p>
+                                <p>You can reduce your chances of being infected or spreading COVID-19 by taking some
+                                    simple precautions:
+                                </p>
+                                <ul>
+                                    <li>Regularly and thoroughly clean your hands with an alcohol-based hand rub or
+                                        wash them with soap and water.
+                                    </li>
+                                    <li>
+                                        <span>Why?</span>Washing your hands with soap and water or using alcohol-based hand rub
+                                        kills viruses that may be on your hands.
+                                    </li>
+                                    <li>
+                                        Maintain at least 1 metre (3 feet) distance between yourself and anyone who
+                                        is coughing or sneezing.
+                                    </li>
+                                    <li>
+                                        <span>Why?</span> When someone coughs or sneezes they spray small liquid droplets from
+                                        their nose or mouth which may contain virus. If you are too close, you can
+                                        breathe in the droplets, including the COVID-19 virus if the person coughing
+                                        has the disease.
+                                    </li>
+                                    <li>
+                                        Avoid touching eyes, nose and mouth.
+                                    </li>
+                                    <li>
+                                        <span>Why?</span> Hands touch many surfaces and can pick up viruses. Once contaminated,
+                                        hands can transfer the virus to your eyes, nose or mouth. From there, the
+                                        virus can enter your body and can make you sick.
+                                    </li>
+                                    <li>
+                                        Make sure you, and the people around you, follow good respiratory hygiene.
+                                        This means covering your mouth and nose with your bent elbow or tissue when
+                                        you cough or sneeze. Then dispose of the used tissue immediately.
+                                    </li>
+                                    <li>
+                                        <span>Why?</span> Droplets spread virus. By following good respiratory hygiene you
+                                        protect the people around you from viruses such as cold, flu and COVID-19.
+                                    </li>
+                                    <li>
+                                        Stay home if you feel unwell. If you have a fever, cough and difficulty
+                                        breathing, seek medical attention and call in advance. Follow the directions
+                                        of your local health authority.
+                                    </li>
+                                    <li>
+                                        <span>Why?</span> National and local authorities will have the most up to date
+                                        information on the situation in your area. Calling in advance will allow
+                                        your health care provider to quickly direct you to the right health
+                                        facility. This will also protect you and help prevent spread of viruses and
+                                        other infections.
+                                    </li>
+                                    <li>
+                                        Keep up to date on the latest COVID-19 hotspots (cities or local areas where
+                                        COVID-19 is spreading widely). If possible, avoid traveling to places –
+                                        especially if you are an older person or have diabetes, heart or lung
+                                        disease.
+                                    </li>
+                                </ul>
+                                <p>
+                                    <span>Why?</span> You have a higher chance of catching COVID-19 in one of these areas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized ">
+                                <h6>Why is the disease being called coronavirus disease 2019, COVID-19?</h6>
+                                <i class="fas show-icon  fa-plus"></i>
+                                <i class="fas hide-icon  fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>On February 11, 2020 the World Health Organization announced an
+                                    official
+                                    name for the disease that is causing the 2019 novel coronavirus outbreak, first
+                                    identified
+                                    in Wuhan China. The new name of this disease is coronavirus disease 2019,
+                                    abbreviated as
+                                    COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for
+                                    disease.
+                                    Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+                                </p>
+                                <p>
+                                    There are many types of human coronaviruses including some that commonly cause mild
+                                    upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or
+                                    new)
+                                    coronavirus that has not previously been seen in humans. The name of this disease
+                                    was
+                                    selected following the World Health Organization (WHO) best practiceexternal icon
+                                    for
+                                    naming
+                                    of new human infectious diseases.</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>How can people help stop stigma related to COVID-19?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon showless-icon fa-minus"></i>
+
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People can fight stigma and help, not hurt, others by providing social support.
+                                    Counter
+                                    stigma by learning and sharing facts. Communicating the facts that viruses do not
+                                    target
+                                    specific racial or ethnic groups and how COVID-19 actually spreads can help stop
+                                    stigma.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>Why might someone blame or avoid individuals and groups?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon fa-minus"></i>
+
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People in the U.S. may be worried or anxious about friends and
+                                    relatives
+                                    who are living in or visiting areas where COVID-19 is spreading. Some people are
+                                    worried
+                                    about the disease. Fear and anxiety can lead to social stigma, for example, towards
+                                    Chinese
+                                    or other Asian Americans or people who were in quarantine.</p>
+                                <p>
+                                    Stigma is discrimination against an identifiable group of people, a place, or a
+                                    nation.
+                                    Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to
+                                    blame
+                                    someone, fears about disease and death, and gossip that spreads rumors and myths.
+                                </p>
+                                <p>
+                                    Stigma hurts everyone by creating more fear or anger towards ordinary people instead
+                                    of the disease that is causing the problem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="answers header-active">
+                    <div class=" answerDetails one">
+                        <div class="details">
+                            <div class="main-question active">
+                                <h6>What are the symptoms of COVID-19?</h6>
+                                <!-- <i class="fas fa-plus  show-icon"></i> -->
+                                <i class="fas   show-icon fa-minus"></i>
+                            </div>
+                            <div class="main-question-answer">
+                                <p> The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention.
+                                </p>
+                                    <p>Read about COVID-19 Symptoms from CDC.gov.</p>
+                              
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized ">
+                                <h6>Why is the disease being called coronavirus disease 2019, COVID-19?</h6>
+                                <i class="fas show-icon  fa-plus"></i>
+                                <i class="fas hide-icon  fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>On February 11, 2020 the World Health Organization announced an
+                                    official
+                                    name for the disease that is causing the 2019 novel coronavirus outbreak, first
+                                    identified
+                                    in Wuhan China. The new name of this disease is coronavirus disease 2019,
+                                    abbreviated as
+                                    COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for
+                                    disease.
+                                    Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+                                </p>
+                                <p>
+                                    There are many types of human coronaviruses including some that commonly cause mild
+                                    upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or
+                                    new)
+                                    coronavirus that has not previously been seen in humans. The name of this disease
+                                    was
+                                    selected following the World Health Organization (WHO) best practiceexternal icon
+                                    for
+                                    naming
+                                    of new human infectious diseases.</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>How can people help stop stigma related to COVID-19?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon showless-icon fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People can fight stigma and help, not hurt, others by providing social support.
+                                    Counter
+                                    stigma by learning and sharing facts. Communicating the facts that viruses do not
+                                    target
+                                    specific racial or ethnic groups and how COVID-19 actually spreads can help stop
+                                    stigma.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>Why might someone blame or avoid individuals and groups?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People in the U.S. may be worried or anxious about friends and
+                                    relatives
+                                    who are living in or visiting areas where COVID-19 is spreading. Some people are
+                                    worried
+                                    about the disease. Fear and anxiety can lead to social stigma, for example, towards
+                                    Chinese
+                                    or other Asian Americans or people who were in quarantine.</p>
+                                <p>
+                                    Stigma is discrimination against an identifiable group of people, a place, or a
+                                    nation.
+                                    Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to
+                                    blame
+                                    someone, fears about disease and death, and gossip that spreads rumors and myths.
+                                </p>
+                                <p>
+                                    Stigma hurts everyone by creating more fear or anger towards ordinary people instead
+                                    of the disease that is causing the problem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="answers header-active">
+                    <div class=" answerDetails one">
+                        <div class="details">
+                            <div class="main-question active">
+                                <h6>What should I do if there is an outbreak in my community?</h6>
+                                <!-- <i class="fas fa-plus  show-icon"></i> -->
+                                <i class="fas show-icon   fa-minus"></i>
+                            </div>
+                            <div class="main-question-answer">
+                                <p> On February 11, 2020 the World Health Organization announced an official name for
+                                    the
+                                    disease that is causing the 2019 novel coronavirus outbreak, first identified in
+                                    Wuhan
+                                    China. The new name of this disease is coronavirus disease 2019, abbreviated as
+                                    COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for
+                                    disease.
+                                    Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+                                </p>
+                                <p>
+                                    A novel coronavirus is a new coronavirus that has not been previously identified.
+                                    The
+                                    virus causing coronavirus disease 2019 (COVID-19), is not the same as the
+                                    coronaviruses
+                                    that commonly circulate among humans and cause mild illness, like the common cold.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized ">
+                                <h6>Why is the disease being called coronavirus disease 2019, COVID-19?</h6>
+                                <i class="fas show-icon  fa-plus"></i>
+                                <i class="fas hide-icon  fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>On February 11, 2020 the World Health Organization announced an
+                                    official
+                                    name for the disease that is causing the 2019 novel coronavirus outbreak, first
+                                    identified
+                                    in Wuhan China. The new name of this disease is coronavirus disease 2019,
+                                    abbreviated as
+                                    COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for
+                                    disease.
+                                    Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+                                </p>
+                                <p>
+                                    There are many types of human coronaviruses including some that commonly cause mild
+                                    upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or
+                                    new)
+                                    coronavirus that has not previously been seen in humans. The name of this disease
+                                    was
+                                    selected following the World Health Organization (WHO) best practiceexternal icon
+                                    for
+                                    naming
+                                    of new human infectious diseases.</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>How can people help stop stigma related to COVID-19?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon showless-icon fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People can fight stigma and help, not hurt, others by providing social support.
+                                    Counter
+                                    stigma by learning and sharing facts. Communicating the facts that viruses do not
+                                    target
+                                    specific racial or ethnic groups and how COVID-19 actually spreads can help stop
+                                    stigma.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>Why might someone blame or avoid individuals and groups?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People in the U.S. may be worried or anxious about friends and
+                                    relatives
+                                    who are living in or visiting areas where COVID-19 is spreading. Some people are
+                                    worried
+                                    about the disease. Fear and anxiety can lead to social stigma, for example, towards
+                                    Chinese
+                                    or other Asian Americans or people who were in quarantine.</p>
+                                <p>
+                                    Stigma is discrimination against an identifiable group of people, a place, or a
+                                    nation.
+                                    Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to
+                                    blame
+                                    someone, fears about disease and death, and gossip that spreads rumors and myths.
+                                </p>
+                                <p>
+                                    Stigma hurts everyone by creating more fear or anger towards ordinary people instead
+                                    of the disease that is causing the problem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="answers header-active">
+                    <div class=" answerDetails one">
+                        <div class="details">
+                            <div class="main-question active">
+                                <h6>COVID-19 virus can be transmitted in areas with hot and humid climates?
+                                    
+                                    </h6>
+                                <!-- <i class="fas fa-plus  show-icon"></i> -->
+                                <i class="fas show-icon   fa-minus"></i>
+                            </div>
+                            <div class="main-question-answer">
+                                <p> From the evidence so far, the COVID-19 virus can be transmitted in ALL AREAS, including areas with hot and humid weather. Regardless of climate, adopt protective measures if you live in, or travel to an area reporting COVID-19. The best way to protect yourself against COVID-19 is by frequently cleaning your hands. By doing this you eliminate viruses that may be on your hands and avoid infection that could occur by then touching your eyes, mouth, and nose.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized ">
+                                <h6>Why is the disease being called coronavirus disease 2019, COVID-19?</h6>
+                                <i class="fas show-icon  fa-plus"></i>
+                                <i class="fas hide-icon  fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>On February 11, 2020 the World Health Organization announced an
+                                    official
+                                    name for the disease that is causing the 2019 novel coronavirus outbreak, first
+                                    identified
+                                    in Wuhan China. The new name of this disease is coronavirus disease 2019,
+                                    abbreviated as
+                                    COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for
+                                    disease.
+                                    Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+                                </p>
+                                <p>
+                                    There are many types of human coronaviruses including some that commonly cause mild
+                                    upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or
+                                    new)
+                                    coronavirus that has not previously been seen in humans. The name of this disease
+                                    was
+                                    selected following the World Health Organization (WHO) best practiceexternal icon
+                                    for
+                                    naming
+                                    of new human infectious diseases.</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>How can people help stop stigma related to COVID-19?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon showless-icon fa-minus"></i>
+
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People can fight stigma and help, not hurt, others by providing social support.
+                                    Counter
+                                    stigma by learning and sharing facts. Communicating the facts that viruses do not
+                                    target
+                                    specific racial or ethnic groups and how COVID-19 actually spreads can help stop
+                                    stigma.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="main-question minimized">
+                                <h6>Why might someone blame or avoid individuals and groups?</h6>
+                                <i class="fas fa-plus show-icon"></i>
+                                <i class="fas hide-icon fa-minus"></i>
+                            </div>
+                            <div class=" main-question-answer hide-answer">
+                                <p>
+                                    People in the U.S. may be worried or anxious about friends and
+                                    relatives
+                                    who are living in or visiting areas where COVID-19 is spreading. Some people are
+                                    worried
+                                    about the disease. Fear and anxiety can lead to social stigma, for example, towards
+                                    Chinese
+                                    or other Asian Americans or people who were in quarantine.</p>
+                                <p>
+                                    Stigma is discrimination against an identifiable group of people, a place, or a
+                                    nation.
+                                    Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to
+                                    blame
+                                    someone, fears about disease and death, and gossip that spreads rumors and myths.
+                                </p>
+                                <p>
+                                    Stigma hurts everyone by creating more fear or anger towards ordinary people instead
+                                    of the disease that is causing the problem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -601,26 +1194,26 @@
     <!-- ********************************************************************************************
                                         BLOG
             ************************************************************************************************* -->
-    <section class="mainSection navbarItem">
+    <section class="mainSection navbarItem blog">
         <div class="container">
             <h4> RECENT FROM BLOG</h4>
             <h2>LATEST UPDATE</h2>
             <div class="row blogContant">
-                <div class="col-lg-4">
+                <div class="blogDetails">
                     <img src="Images/blog-a.jpg">
                     <h6>Caring for someone at home</h6>
                     <p>Most people who get sick with COVID-19 will have only mild illness and should recover at home.
                         Care at home can help stop the spread of COVID-19
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="blogDetails">
                     <img src="Images/blog-b.jpg">
                     <h6>Caring for someone at home</h6>
                     <p>Most people who get sick with COVID-19 will have only mild illness and should recover at home.
                         Care at home can help stop the spread of COVID-19
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="blogDetails">
                     <img src="Images/blog-c.jpg">
                     <h6>If You Think You Are Sick</h6>
                     <p>If you are sick with COVID-19 or think you might have it, follow the steps below to help protect
@@ -633,7 +1226,7 @@
     <!-- ******************************************************************************************************
                                         do And Dont
     ********************************************************************************************************** -->
-    <section id="doAndDont" class="mainSection navbarItem">
+    <section id="doAndDont" class="mainSection doAndDont navbarItem">
         <div class="doAndDont container">
             <h4>
                 DO’S & DON’TS
@@ -641,39 +1234,39 @@
             <h2>
                 PROTECT YOURSELF
             </h2>
-            <p>
+            <p class="centerP">
                 The best thing you can do now is plan for how you can adapt your daily routine. Take few steps to
                 protect yourself as Clean your hands often, Avoid close contact, Cover coughs and sneezes, clean daily
                 used surfaces etc. The best way to prevent illness is to avoid being exposed to this virus.
             </p>
-            <div class="row doAndDontContant">
-                <div class="col-lg-3 ">
+            <div class=" doAndDontContant">
+                <div class="mainDoAndDont">
                     <div class="doAndDontContantDetails">
                         <h6>Avoid Close Contact</h6>
-                        <div>
+                        <div class="img-box">
                             <img src="Images/donts-a.png">
-                            <i class="far fa-times-circle"></i>
+                            <i class="far photo-icon fa-times-circle"></i>
                         </div>
                     </div>
                     <div class="doAndDontContantDetails">
                         <h6>Don’t Touch Face</h6>
-                        <div>
+                        <div class="img-box">
                             <img src="Images/donts-b.png">
-                            <i class="far fa-times-circle"></i>
+                            <i class="far photo-icon fa-times-circle"></i>
                         </div>
                     </div>
                     <div class="doAndDontContantDetails">
                         <h6>Social Distancing</h6>
-                        <div>
+                        <div >
                             <img src="Images/donts-c.png">
-                            <i class="far fa-times-circle"></i>
+                            <i class="far photo-icon fa-times-circle"></i>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 doAndDontImage">
+                <div class="doAndDontImage">
                     <img src="Images/protect.png" alt="protect">
                 </div>
-                <div class="col-lg-3 ">
+                <div class="mainDoAndDont">
                     <div class="doAndDontContantDetails">
                         <div>
                             <img src="Images/dos-a.png">
@@ -702,15 +1295,11 @@
     <!-- ********************************************************************************************
                                         footer
             ************************************************************************************************* -->
-
-    <div class="scroll-top">
-        <i class="fas fa-arrow-up "></i>
-    </div>
-    <footer class=" footer mainSection">
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h3>C<i class=" fas fa-viruses"></i>VID19</h3>
+            <div class=" footerParts">
+                <div class="mainfooter">
+                    <h3 class="logo">C<i class=" fas diffcolor fa-viruses"></i>VID19</h3>
                     <p> This website is for health information and advice about coronavirus (COVID-19), how to prevent
                         and
                         protect yourself from disease.
@@ -720,9 +1309,8 @@
                     <div class="socialLinks">
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <h3> QUICK LINK
-                    </h3>
+                <div class="details">
+                    <h3> QUICK LINK</h3>
                     <ul>
                         <li>About Corona</li>
                         <li>Symptoms</li>
@@ -731,7 +1319,7 @@
                         <li>FAQs</li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="details">
                     <h3>HELPFULL LINK</h3>
                     <ul>
                         <li>Healthcare Professionals</li>
@@ -740,7 +1328,7 @@
                         <li>Repare your Family</li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="details">
                     <h3>IMPORTANT LINK</h3>
                     <ul>
                         <li>WHO Website</li>
@@ -750,12 +1338,10 @@
                     </ul>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p> © 2020 COVID-19. Template Made by Mina Karam Ghoprial .
-                    </p>
-                    <p><small>
-                            Privacy Policy</small></p>
+            <div class="footer">
+                <div class="copyrights">
+                    <p> © 2020 COVID-19. Template Made by Mona Mustafa Awad . </p>
+                    <p><small>Privacy Policy</small></p>
                 </div>
                 <p><small> Disclaimer: We hope you find the information presented on this website useful. This website
                         is
@@ -768,6 +1354,10 @@
             </div>
         </div>
     </footer>
+    
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up "></i>
+    </div>
     <script src="Js/main.js"></script>
 </body>
 

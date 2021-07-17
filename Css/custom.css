@@ -618,7 +618,7 @@ ul.diff-style li {
 .protectdetails {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .protectdetails .details {

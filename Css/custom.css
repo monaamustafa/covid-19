@@ -464,9 +464,10 @@ ul.diff-style li {
 
 .spread .question {
     text-align: center;
-    margin: 7%;
+    /* margin: 7%; */
     font-size: 19px;
     font-weight: 400;
+    /* width: 100%; */
 }
 
 .spread .question .btnLink {
@@ -1096,8 +1097,11 @@ ul.diff-style li {
 .mainDont .img-box img,
 .mainDo .img-box img {
     width: 100px;
-}
 
+}
+.img-box{
+    position: relative;
+}
 .doAndDontImage {
     width: 48%;
 }
@@ -1123,40 +1127,36 @@ ul.diff-style li {
 .doAndDontContantDetails p {
     font-size: 13px;
     margin: 20% 0;
-
+    width: 80%;
     color: #465675;
 }
 
 .img-box {
     width: 10%;
 }
-
 .doAndDontContantDetails img {
-    /* width: 100%; */
     background-color: #fff;
-    /* position: absolute; */
     border-radius: 50%;
 }
 
 .doAndDontContantDetails .photo-icon {
-    position: relative;
-    bottom: 99px;
-    right: -3px;
+    position: absolute;
+    bottom: 79px;
+    right: -18px;
     font-size: 19px;
     color: red;
 }
 
 .doAndDontContantDetails .photo-icon-right {
-    position: relative;
-    bottom: 99px;
-    right: -3px;
+    position: absolute;
+    bottom: 79px;
+    right: -18px;;
     font-size: 19px;
     color: green;
 }
 
 .doAndDontImage img {
     width: 70%;
-    /* height: 100%; */
 }
 
 .doAndDontContantDetails {
